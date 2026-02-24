@@ -8,8 +8,8 @@ const Navigation = () => {
         <div className={tw(`flex items-center justify-between h-20`)}>
           <div className={tw(`flex items-center`)}>
             <div className={tw(`flex-shrink-0 flex items-center gap-3`)}>
-              <div className={tw(`w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20`)}>
-                <img className={tw(`h-6 w-6`)} src="logo.svg" alt="logo" width={24} height={24} />
+              <div className={tw(`w-15 h-15 bg-white-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20`)}>
+                <img className={tw(`h-12 w-12`)} src="logo.svg" alt="logo" width={24} height={24} />
               </div>
               <span className={tw(`text-white font-bold text-xl tracking-tight`)}>Concesionaria AI</span>
             </div>
