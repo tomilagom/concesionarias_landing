@@ -28,29 +28,29 @@ const listItems = [
 ];
 
 const ListSection = () => (
-  <section className={tw(`lg:py-28 pt-20 pb-20 bg-slate-50`)}>
+  <section className={tw(`lg:py-28 pt-20 pb-20 bg-white`)}>
     <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8`)}>
       <div className={tw(`mb-20 text-center`)}>
         <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase mb-4`)}>
           El Problema Real
         </h2>
-        <p className={tw(`text-4xl lg:text-5xl font-bold tracking-tight text-gray-900`)}>
+        <p className={tw(`text-4xl lg:text-5xl font-bold tracking-tight text-slate-900`)}>
           Tu operación no está hecha para hoy
         </p>
       </div>
-      <div className={tw(`grid grid-cols-1 gap-12 lg:gap-16`)}>
+      <div className={tw(`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8`)}>
         {listItems.map((item, index) => (
-          <div className={tw(`flex gap-6`)} key={item.title}>
-            <div className={tw(`flex-shrink-0`)}>
+          <div className={tw(`relative p-8 rounded-2xl border border-slate-100 bg-slate-50 bg-opacity-50 hover:bg-white hover:shadow-xl transition-all group`)} key={item.title}>
+            <div className={tw(`mb-6`)}>
               <span
-                className={tw(`flex w-12 h-12 items-center justify-center text-lg font-bold rounded-full bg-indigo-600 text-white`)}
+                className={tw(`flex w-12 h-12 items-center justify-center text-lg font-bold rounded-xl bg-indigo-600 text-white shadow-lg group-hover:scale-110 transition-transform`)}
               >
                 {index + 1}
               </span>
             </div>
             <div>
-              <h3 className={tw(`text-xl font-bold text-gray-900 mb-2`)}>{item.title}</h3>
-              <p className={tw(`text-gray-600 leading-relaxed`)}>{item.description}</p>
+              <h3 className={tw(`text-xl font-bold text-slate-900 mb-3`)}>{item.title}</h3>
+              <p className={tw(`text-slate-600 leading-relaxed`)}>{item.description}</p>
             </div>
           </div>
         ))}

@@ -41,14 +41,14 @@ const benefits = [
 ];
 
 const CasesSection = () => (
-  <section>
-    <div className={tw(`w-full bg-white py-20`)}>
+  <section className={tw(`relative overflow-hidden`)}>
+    <div className={tw(`w-full bg-slate-50 py-28`)}>
       <div className={tw(`max-w-7xl mx-4 lg:mx-auto`)}>
         <div className={tw(`text-center mb-20`)}>
           <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase mb-4`)}>
             Resultados Reales
           </h2>
-          <p className={tw(`text-4xl lg:text-5xl font-bold text-gray-900`)}>
+          <p className={tw(`text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight`)}>
             En números que importan
           </p>
         </div>
@@ -58,19 +58,19 @@ const CasesSection = () => (
               <div
                 key={benefit.title}
                 className={tw(
-                  `bg-gradient-to-br from-slate-50 to-slate-100 rounded-lg p-8 border border-slate-200 hover:shadow-lg transition`,
+                  `bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 group`,
                 )}
               >
                 <div className={tw(`mb-6`)}>
-                  <p className={tw(`text-indigo-600 text-4xl lg:text-5xl font-bold mb-1`)}>{benefit.metric}</p>
-                  {benefit.submetric && <p className={tw(`text-gray-600 text-sm uppercase tracking-wide`)}>{benefit.submetric}</p>}
+                  <p className={tw(`text-indigo-600 text-5xl font-extrabold mb-1 tracking-tighter group-hover:scale-105 transition-transform origin-left`)}>{benefit.metric}</p>
+                  {benefit.submetric && <p className={tw(`text-slate-500 text-xs font-bold uppercase tracking-widest`)}>{benefit.submetric}</p>}
                 </div>
 
-                <h3 className={tw(`text-xl font-bold text-gray-900 mb-3`)}>{benefit.title}</h3>
-                <p className={tw(`text-gray-600 leading-relaxed`)}>{benefit.description}</p>
+                <h3 className={tw(`text-xl font-bold text-slate-900 mb-3`)}>{benefit.title}</h3>
+                <p className={tw(`text-slate-600 leading-relaxed text-sm`)}>{benefit.description}</p>
 
-                <div className={tw(`mt-6 h-32 bg-gradient-to-r from-indigo-100 to-indigo-50 rounded flex items-center justify-center text-gray-400 text-sm`)}>
-                  Chart Placeholder
+                <div className={tw(`mt-8 h-2 bg-slate-100 rounded-full overflow-hidden`)}>
+                  <div className={tw(`h-full bg-indigo-600 rounded-full animate-pulse`)} style={{ width: `70%` }}></div>
                 </div>
               </div>
             ))}
@@ -78,20 +78,21 @@ const CasesSection = () => (
       </div>
     </div>
 
-    <div className={tw(`w-full bg-indigo-600 py-16`)}>
-      <div className={tw(`max-w-4xl mx-4 lg:mx-auto text-center`)}>
-        <h2 className={tw(`text-4xl lg:text-5xl font-bold text-white mb-6`)}>
-          ¿Cómo es que tu competencia ya usa esto?
+    <div className={tw(`w-full bg-slate-900 py-24 relative overflow-hidden`)}>
+      <div className={tw(`absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 via-blue-500 to-indigo-500`)}></div>
+      <div className={tw(`max-w-4xl mx-4 lg:mx-auto text-center relative z-10`)}>
+        <h2 className={tw(`text-4xl lg:text-5xl font-extrabold text-white mb-8 tracking-tight`)}>
+          ¿Cómo es que tu competencia <br/>ya usa esto?
         </h2>
-        <p className={tw(`text-indigo-100 text-lg mb-8`)}>
-          Agendar una auditoría de tu stack tecnológico es gratis. Te mostramos cuánto dinero pierdes por mes en manual work.
+        <p className={tw(`text-slate-400 text-lg mb-10 max-w-2xl mx-auto leading-relaxed`)}>
+          Agendar una auditoría de tu stack tecnológico es gratis. Te mostramos cuánto dinero pierdes por mes en <span className={tw(`text-white underline decoration-indigo-500 underline-offset-4`)}>trabajo manual</span>.
         </p>
         <button
           className={tw(
-            `bg-white text-indigo-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-indigo-50 transition inline-flex items-center gap-2`,
+            `bg-indigo-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-indigo-500 hover:shadow-2xl transition-all active:scale-95 inline-flex items-center gap-3`,
           )}
         >
-          Reservá tu consultoría
+          Reservá tu consultoría gratuita
           <Arrow className={tw(`h-5 w-5`)} />
         </button>
       </div>

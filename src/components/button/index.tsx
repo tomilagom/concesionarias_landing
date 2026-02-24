@@ -7,10 +7,10 @@ interface IButton {
 }
 
 const Button = ({ primary, modifier, children, ...rest }: IButton) => {
-  const baseStyle = `font-sans font-medium py-2 px-4 border rounded`;
+  const baseStyle = `font-sans font-semibold py-2.5 px-6 rounded-lg transition-all duration-200 active:scale-95`;
   const styles = primary
-    ? `bg-indigo-600 text-white border-indigo-500 hover:bg-indigo-700`
-    : `bg-white text-gray-600 border-gray-300 hover:bg-gray-100`;
+    ? `bg-indigo-600 text-white border-transparent hover:bg-indigo-500 hover:shadow-xl`
+    : `bg-transparent text-slate-300 border border-slate-700 hover:bg-slate-800 hover:text-white`;
 
   return (
     <button type="button" className={tw(`${baseStyle} ${styles} ${modifier ?? ``}`)} {...rest}>
