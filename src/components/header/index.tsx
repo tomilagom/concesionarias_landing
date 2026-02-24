@@ -99,11 +99,12 @@ const Header = () => {
             </div>
 
           <div className={tw(`mt-12 pt-8 border-t border-slate-800`)}>
-            <p className={tw(`text-sm text-slate-500 mb-4 font-medium uppercase tracking-wider`)}>Integrado con los líderes</p>
-            <div className={tw(`flex gap-6 items-center grayscale opacity-50`)}>
-              <span className={tw(`text-white font-bold text-lg`)}>WhatsApp</span>
-              <span className={tw(`text-white font-bold text-lg`)}>Meta</span>
-              <span className={tw(`text-white font-bold text-lg`)}>Google Ads</span>
+            <p className={tw(`text-sm text-slate-500 mb-6 font-medium uppercase tracking-wider`)}>Integrado con los líderes</p>
+            <div className={tw(`flex flex-wrap gap-8 items-center opacity-70`)}>
+              <img className={tw(`h-10 w-auto object-contain`)} src="/images/meta-business-partner-logo.webp" alt="Meta Business Partner" />
+              <img className={tw(`h-14 w-auto object-contain`)} src="/images/google-ads-ogo.png" alt="Google Ads" />
+              <img className={tw(`h-9 w-auto object-contain`)} src="/images/whatsapp-logo.png" alt="WhatsApp" />
+              <img className={tw(`h-11 w-auto object-contain`)} src="/images/instagram-logo.png" alt="Instagram" />
             </div>
           </div>
         </div>
