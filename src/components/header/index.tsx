@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { tw, css } from 'twind/css';
 import Button from '@/components/button';
 
@@ -11,37 +12,86 @@ const headerStyle = css`
   align-items: center;
 `;
 
-const Header = () => (
-  <header className={tw(headerStyle, `relative overflow-hidden`)}>
-    {/* Decorative background elements */}
-    <div className={tw(`absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none`)}>
-      <div className={tw(`absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-500 bg-opacity-10 blur-[120px] rounded-full`)}></div>
-      <div className={tw(`absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500 bg-opacity-10 blur-[120px] rounded-full`)}></div>
-    </div>
+const cursorStyle = css`
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background-color: #818cf8;
+  margin-left: 4px;
+  vertical-align: middle;
+  animation: blink 1s step-end infinite;
+`;
 
-    <div className={tw(`max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 relative z-10`)}>
-      <div className={tw(`grid lg:grid-cols-2 gap-12 items-center`)}>
-        <div className={tw(`text-left`)}>
-          <div className={tw(`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500 bg-opacity-10 border border-indigo-500 border-opacity-20 mb-6`)}>
-            <span className={tw(`w-2 h-2 rounded-full bg-indigo-400 animate-pulse`)}></span>
-            <p className={tw(`text-indigo-400 font-mono text-xs font-bold tracking-widest uppercase`)}>
-              Powered by Hyppo IA
+const Header = () => {
+  const [displayText, setDisplayText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [wordIndex, setWordIndex] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(150);
+
+  const words = ['pierde el 80%', 'gana el 100%'];
+
+  useEffect(() => {
+    const handleTyping = () => {
+      const currentWord = words[wordIndex % words.length];
+      
+      if (isDeleting) {
+        setDisplayText(currentWord.substring(0, displayText.length - 1));
+        setTypingSpeed(50);
+      } else {
+        setDisplayText(currentWord.substring(0, displayText.length + 1));
+        setTypingSpeed(150);
+      }
+
+      if (!isDeleting && displayText === currentWord) {
+        setTypingSpeed(2000); // Pause at the end
+        setIsDeleting(true);
+      } else if (isDeleting && displayText === '') {
+        setIsDeleting(false);
+        setWordIndex((prev) => prev + 1);
+        setTypingSpeed(500);
+      }
+    };
+
+    const timer = setTimeout(handleTyping, typingSpeed);
+    return () => clearTimeout(timer);
+  }, [displayText, isDeleting, wordIndex, typingSpeed]);
+
+  return (
+    <header className={tw(headerStyle, `relative overflow-hidden`)}>
+      {/* Decorative background elements */}
+      <div className={tw(`absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none`)}>
+        <div className={tw(`absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-500 bg-opacity-10 blur-[120px] rounded-full`)}></div>
+        <div className={tw(`absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500 bg-opacity-10 blur-[120px] rounded-full`)}></div>
+      </div>
+
+      <div className={tw(`max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 relative z-10`)}>
+        <div className={tw(`grid lg:grid-cols-2 gap-12 items-center`)}>
+          <div className={tw(`text-left`)}>
+            <div className={tw(`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500 bg-opacity-10 border border-indigo-500 border-opacity-20 mb-6`)}>
+              <span className={tw(`w-2 h-2 rounded-full bg-indigo-400 animate-pulse`)}></span>
+              <p className={tw(`text-indigo-400 font-mono text-xs font-bold tracking-widest uppercase`)}>
+                Powered by Hyppo IA
+              </p>
+            </div>
+            <h1 className={tw(`font-sans font-extrabold text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-white mb-8 tracking-tight`)}>
+              Tu equipo de ventas <span className={tw(`text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400`)}>{displayText}</span>
+              <span className={tw(cursorStyle)}></span> del día.
+            </h1>
+            <p className={tw(`text-lg lg:text-xl text-slate-400 max-w-xl mb-10 leading-relaxed`)}>
+              Dejá de perseguir leads fríos. Centralizamos tu data y usamos IA para calificar prospectos 24/7. Tus vendedores solo hablan con quienes <span className={tw(`text-white font-semibold`)}>realmente quieren comprar</span>.
             </p>
-          </div>
-          <h1 className={tw(`font-sans font-extrabold text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-white mb-8 tracking-tight`)}>
-            Tu equipo de ventas <span className={tw(`text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400`)}>pierde el 80%</span> del día.
-          </h1>
-          <p className={tw(`text-lg lg:text-xl text-slate-400 max-w-xl mb-10 leading-relaxed`)}>
-            Dejá de perseguir leads fríos. Centralizamos tu data y usamos IA para calificar prospectos 24/7. Tus vendedores solo hablan con quienes <span className={tw(`text-white font-semibold`)}>realmente quieren comprar</span>.
-          </p>
-          <div className={tw(`flex flex-wrap gap-4`)}>
-            <Button primary modifier="px-8 py-4 text-lg shadow-xl hover:scale-105 transition-transform">
-              Agendá una demo
-            </Button>
-            <Button modifier="px-8 py-4 text-lg bg-slate-800 border-slate-700 text-white hover:bg-slate-700 transition-colors">
-              Ver cómo funciona
-            </Button>
-          </div>
+            <div className={tw(`flex flex-wrap gap-4`)}>
+              <Button primary modifier="px-8 py-4 text-lg shadow-xl hover:scale-105 transition-transform">
+                Agendá una demo
+              </Button>
+              <Button modifier="px-8 py-4 text-lg bg-slate-800 border-slate-700 text-white hover:bg-slate-700 transition-colors">
+                Ver cómo funciona
+              </Button>
+            </div>
 
           <div className={tw(`mt-12 pt-8 border-t border-slate-800`)}>
             <p className={tw(`text-sm text-slate-500 mb-4 font-medium uppercase tracking-wider`)}>Integrado con los líderes</p>
@@ -87,7 +137,8 @@ const Header = () => (
       </div>
     </div>
   </header>
-);
+  );
+};
 
 export default Header;
 
