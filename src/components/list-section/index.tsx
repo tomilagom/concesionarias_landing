@@ -1,66 +1,65 @@
 import { tw } from 'twind';
-import FeatureSvg from '@/constants/svg/features.svg';
 
 const listItems = [
   {
-    title: `Designers`,
-    description: `Officia et fugiat mollit qui. Dolor elit aliqua voluptate ipsum
-    excepteur cillum consequat consectetur duis magna qui eu consequat occaecat.
-    Deserunt nisi sit.`,
+    title: `Vendedores en WhatsApp a las 3 AM`,
+    description: `Tu equipo responde mensajes de leads 24/7 sin saber si van a comprar. Mientras tanto, la competencia automatiza ese trabajo.`,
   },
   {
-    title: `Developers`,
-    description: `Pariatur consectetur laboris exercitation duis laboris.
-    Commodo duis fugiat magna fugiat et ut anim elit. Tempor aute ex qui
-    tempor tempor.`,
+    title: `Datos fragmentados entre Excel y redes sociales`,
+    description: `Meta Ads, Google, WhatsApp, CRM... cada plataforma una isla. No sabes qué auto miró cada cliente ni si está caliente.`,
   },
   {
-    title: `Product owners`,
-    description: `Ullamco consectetur ipsum eiusmod nisi adipisicing sint anim
-    dolore aute excepteur. Voluptate ea ullamco sunt eu elit qui aliquip.
-    Adipisicing.`,
+    title: `Leads que se enfrían mientras esperas`,
+    description: `Un prospecto interesado en tu SUV roja espera 24 horas por respuesta de un vendedor. Compra otra marca porque no le respondiste.`,
+  },
+  {
+    title: `Sin personalización en el seguimiento`,
+    description: `Envías la misma campaña a todos. No existe segmentación por modelo de auto, presupuesto o intención de compra real.`,
+  },
+  {
+    title: `Escalas contratando más personal`,
+    description: `Cada lead nuevo = más vendedores. Tu COGS crece mientras los leads no califican. Es insostenible.`,
+  },
+  {
+    title: `No sabes qué estrategia funciona realmente`,
+    description: `Optimizas por clics pero vendes por conversiones. Tus campañas no hablan con tu CRM. Es una caja negra.`,
   },
 ];
 
 const ListSection = () => (
-  <section className={tw(`lg:py-28 pt-28 overflow-hidden`)}>
-    <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white`)}>
-      <div className={tw(`mb-16 text-center`)}>
-        <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase`)}>Grow your revenue</h2>
-        <p className={tw(`mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>
-          Transform your business
+  <section className={tw(`lg:py-28 pt-20 pb-20 bg-slate-50`)}>
+    <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8`)}>
+      <div className={tw(`mb-20 text-center`)}>
+        <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase mb-4`)}>
+          El Problema Real
+        </h2>
+        <p className={tw(`text-4xl lg:text-5xl font-bold tracking-tight text-gray-900`)}>
+          Tu operación no está hecha para hoy
         </p>
       </div>
-      <div className={tw(`flex flex-wrap -mx-8 items-center`)}>
-        <div className={tw(`w-full lg:w-1/2 px-8`)}>
-          <ul className={tw(`space-y-12`)}>
-            {listItems.map((item, index) => (
-              <li className={tw(`flex -mx-4`)} key={item.title}>
-                <div className={tw(`px-4`)}>
-                  <span
-                    className={tw(`flex w-16 h-16 mx-auto items-center
-                      justify-center text-2xl font-bold rounded-full
-                      bg-blue-50 text-blue-500`)}
-                  >
-                    {index + 1}
-                  </span>
-                </div>
-                <div className={tw(`px-4`)}>
-                  <h3 className={tw(`my-4 text-xl font-semibold`)}>{item.title}</h3>
-                  <p className={tw(`text-gray-500 leading-loose`)}>{item.description}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className={tw(`w-full lg:w-1/2 px-8`)}>
-          <div className={tw(`lg:mb-12 lg:mb-0 pb-12 lg:pb-0 mt-16 lg:mt-0 mx-6 lg:mx-0`)}>
-            <FeatureSvg width="100%" height="100%" />
+      <div className={tw(`grid grid-cols-1 gap-12 lg:gap-16`)}>
+        {listItems.map((item, index) => (
+          <div className={tw(`flex gap-6`)} key={item.title}>
+            <div className={tw(`flex-shrink-0`)}>
+              <span
+                className={tw(`flex w-12 h-12 items-center justify-center text-lg font-bold rounded-full bg-indigo-600 text-white`)}
+              >
+                {index + 1}
+              </span>
+            </div>
+            <div>
+              <h3 className={tw(`text-xl font-bold text-gray-900 mb-2`)}>{item.title}</h3>
+              <p className={tw(`text-gray-600 leading-relaxed`)}>{item.description}</p>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   </section>
 );
+
+export default ListSection;
+
 
 export default ListSection;
