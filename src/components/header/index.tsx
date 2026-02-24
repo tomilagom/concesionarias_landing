@@ -106,7 +106,7 @@ const Header = () => {
         <div className={tw(`relative lg:ml-4`)}>
           <div className={tw(`absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-2xl blur opacity-20`)}></div>
           <div className={tw(`relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 border-opacity-50 bg-slate-900 bg-opacity-50 backdrop-blur-xl`)}>
-            <div className={tw(`w-full min-h-[500px] flex flex-col`)}>
+            <div className={tw(`w-full min-h-[600px] flex flex-col`)}>
               {/* Fake Window Header */}
               <div className={tw(`flex items-center justify-between px-4 py-3 bg-slate-800 bg-opacity-50 border-b border-slate-700 border-opacity-50`)}>
                 <div className={tw(`flex gap-2`)}>
@@ -122,8 +122,8 @@ const Header = () => {
                   id="fluentform" 
                   width="100%" 
                   loading="lazy" 
-                  height="500px" 
-                  style={{ minHeight: '500px', width: '100%', background: 'transparent' }} 
+                  height="600px" 
+                  style={{ minHeight: '600px', width: '100%', background: 'transparent' }} 
                   src="https://hyppo.io/?ff_landing=40&embedded=1"
                 ></iframe>
               </div>
