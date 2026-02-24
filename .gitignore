@@ -1,13 +1,13 @@
 # Dependencias
-node_modules/
+node_modules
 
 # Next.js build output
-.next/
-out/
+.next
+out
 
 # Caché de herramientas
-.swc/
-.cache/
+.swc
+.cache
 
 # Logs
 npm-debug.log*
