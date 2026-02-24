@@ -3,6 +3,7 @@ import Page from '@/components/page';
 import Header from '@/components/header';
 import ListSection from '@/components/list-section';
 import FeatureSection from '@/components/feature-section';
+import VideoSection from '@/components/video-section';
 import CasesSection from '@/components/cases-section';
 import SocialProof from '@/components/social-proof';
 import Footer from '@/components/footer';
@@ -18,6 +19,7 @@ export default function Home() {
       <main>
         <ListSection />
         <FeatureSection />
+        <VideoSection />
         <CasesSection />
         <SocialProof />
       </main>
