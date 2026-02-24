@@ -9,7 +9,7 @@ const VideoSection = () => (
             IA en Acción
           </h2>
           <p className={tw(`text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6`)}>
-            Mira cómo Hyppo califica a tus leads en tiempo real
+            Mira cómo Concesionaria-AI califica a tus leads en tiempo real
           </p>
           <p className={tw(`text-slate-400 text-lg mb-8 leading-relaxed`)}>
             Nuestra IA no solo responde, sino que entabla una conversación humana para entender qué modelo buscan, su presupuesto y urgencia. 
