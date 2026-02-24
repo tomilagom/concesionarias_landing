@@ -85,9 +85,14 @@ const Header = () => {
               Atiende a tus clientes 24/7, califica leads automáticamente y agenda test drives sin intervención humana. Deja que tus vendedores se enfoquen en <span className={tw(`text-white font-semibold`)}>cerrar tratos, no en filtrar curiosos</span>.
             </p>
             <div className={tw(`flex flex-wrap gap-4`)}>
-              <Button primary modifier="px-8 py-4 text-lg shadow-xl hover:scale-105 transition-transform">
+              <a 
+                href="https://crm.hyppo.io/widget/bookings/piorichards-concesionarias-ai" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className={tw(`inline-flex items-center px-8 py-4 text-lg bg-indigo-600 text-white rounded-lg shadow-xl hover:bg-indigo-500 hover:scale-105 transition-all font-semibold`)}
+              >
                 Agendá una demo
-              </Button>
+              </a>
               <a href="#como-funciona" className={tw(`inline-flex items-center px-8 py-4 text-lg bg-slate-800 border border-slate-700 text-white rounded-lg hover:bg-slate-700 transition-colors`)}>
                 Ver cómo funciona
               </a>

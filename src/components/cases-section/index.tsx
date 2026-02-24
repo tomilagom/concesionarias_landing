@@ -87,14 +87,17 @@ const CasesSection = () => (
         <p className={tw(`text-slate-400 text-lg mb-10 max-w-2xl mx-auto leading-relaxed`)}>
           Agendar una auditoría de tu stack tecnológico es gratis. Te mostramos cuánto dinero pierdes por mes en <span className={tw(`text-white underline decoration-indigo-500 underline-offset-4`)}>trabajo manual</span>.
         </p>
-        <button
+        <a
+          href="https://crm.hyppo.io/widget/bookings/piorichards-concesionarias-ai"
+          target="_blank"
+          rel="noopener noreferrer"
           className={tw(
             `bg-indigo-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-indigo-500 hover:shadow-2xl transition-all active:scale-95 inline-flex items-center gap-3`,
           )}
         >
           Reservá tu consultoría gratuita
           <Arrow className={tw(`h-5 w-5`)} />
-        </button>
+        </a>
       </div>
     </div>
   </section>

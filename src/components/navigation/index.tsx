@@ -15,7 +15,14 @@ const Navigation = () => {
             </div>
           </div>
           <div className={tw(`flex items-center`)}>
-            <Button primary modifier="px-6 py-2 shadow-lg">Agendá una demo</Button>
+            <a 
+              href="https://crm.hyppo.io/widget/bookings/piorichards-concesionarias-ai" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={tw(`inline-flex items-center px-6 py-2 bg-indigo-600 text-white rounded-lg shadow-lg hover:bg-indigo-500 transition-all font-semibold`)}
+            >
+              Agendá una demo
+            </a>
           </div>
         </div>
       </div>
