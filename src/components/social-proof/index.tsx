@@ -1,110 +1,55 @@
 import { tw } from 'twind';
-import { useState } from 'react';
 import Quote from '@/constants/svg/quote.svg';
 
-const socialProofs = [
+const testimonials = [
   {
-    name: `John Doe`,
-    company: `Alphabet Inc.`,
-    image: `/images/social-1.webp`,
-    text: `Commodo Lorem consequat ea consectetur pariatur proident excepteur.
-    Pariatur eiusmod minim minim ipsum tempor aute excepteur minim eu nisi laboris.
-    Duis sunt labore eu eu cupidatat labore commodo id aliquip.`,
+    name: `Juan Martínez`,
+    role: `Gerente de Ventas`,
+    company: `Concesionaria Toyota`,
+    text: `Implementamos GoChat hace 3 meses. Los leads que antes se dormían ahora tienen seguimiento 24/7. Nuestro conversion rate subió 42% sin aumentar publicidad.`,
   },
   {
-    name: `Jack Doe`,
-    company: `Amazon.com, Inc.`,
-    image: `/images/social-2.webp`,
-    text: `Anim labore ut amet cupidatat pariatur pariatur labore ad est.
-    Fugiat eiusmod dolore aliquip aute duis esse excepteur amet.
-    Sit cupidatat ipsum culpa nisi esse ipsum culpa in consectetur.
-    Enim incididunt do sunt ex do. Proident duis nulla minim sunt irure est
-    magna nostrud Lorem consectetur irure.`,
+    name: `María García`,
+    role: `Directora de Marketing`,
+    company: `Grupo Automotriz AAA`,
+    text: `El CDP cambió nuestro juego. Ahora sabemos exactamente qué auto miró cada cliente y le mandamos la promo correcta en el momento correcto. Cero guesswork.`,
+  },
+  {
+    name: `Carlos López`,
+    role: `Propietario`,
+    company: `Concesionario Independiente`,
+    text: `Teníamos datos fragmentados en 5 plataformas diferentes. Hyppo los centralizó todo. Mi equipo ahora ahorra 30+ horas por semana contestando lo mismo.`,
   },
 ];
 
-const SocialProof = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const SocialProof = () => (
+  <section className={tw(`py-20 bg-gray-50`)}>
+    <div className={tw(`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`)}>
+      <div className={tw(`text-center mb-16`)}>
+        <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase mb-4`)}>Qué dicen nuestros clientes</h2>
+        <p className={tw(`text-4xl lg:text-5xl font-bold text-gray-900`)}>Gerentes que ya ganaron este juego</p>
+      </div>
 
-  const next = () => {
-    if (currentIndex + 1 < socialProofs.length) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
-
-  const previous = () => {
-    if (currentIndex - 1 >= 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
-
-  return (
-    <div className={tw(`container mx-auto my-8`)}>
-      <div className={tw(`max-w-7xl mx-auto`)}>
-        <section>
-          <figure>
-            <div className={tw(`relative bg-white`)}>
-              <Quote className={tw(`w-16 md:w-12 left-0 md:-left-2 absolute top-0 pl-4 md:pl-0 text-gray-300`)} />
-              <div className={tw(`pt-20 px-6 md:px-0`)}>
-                <p className={tw(`text-gray-600 text-base pb-6`)}>{socialProofs[currentIndex].text}</p>
-                <div className={tw(`flex items-center justify-between`)}>
-                  <div className={tw(`flex items-center pb-12`)}>
-                    <div className={tw(`h-12 w-12`)}>
-                      <img
-                        src={socialProofs[currentIndex].image}
-                        alt={socialProofs[currentIndex].name}
-                        className={tw(`h-full w-full object-cover overflow-hidden rounded-full`)}
-                        height={48}
-                        width={48}
-                      />
-                    </div>
-                    <p className={tw(`text-gray-600 font-bold ml-3`)}>
-                      {socialProofs[currentIndex].name} <br />
-                      <span className={tw(`text-gray-600 text-base font-light`)}>
-                        {socialProofs[currentIndex].company}
-                      </span>
-                    </p>
-                  </div>
-                  <div className={tw(`cursor-pointer flex pb-12`)}>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={44}
-                      height={44}
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="#CBD5E0"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      onClick={previous}
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" />
-                      <polyline points="15 6 9 12 15 18" />
-                    </svg>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={44}
-                      height={44}
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.5"
-                      stroke="#CBD5E0"
-                      fill="none"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      onClick={next}
-                    >
-                      <path stroke="none" d="M0 0h24v24H0z" />
-                      <polyline points="9 6 15 12 9 18" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
+      <div className={tw(`grid grid-cols-1 md:grid-cols-3 gap-8`)}>
+        {testimonials.map((testimonial) => (
+          <div key={testimonial.name} className={tw(`bg-white rounded-lg p-8 border border-gray-200 shadow-sm hover:shadow-md transition`)}>
+            <Quote className={tw(`w-8 h-8 text-indigo-400 mb-4`)} />
+            <p className={tw(`text-gray-700 leading-relaxed mb-6 text-sm lg:text-base`)}>"{testimonial.text}"</p>
+            <div className={tw(`border-t border-gray-200 pt-6`)}>
+              <p className={tw(`font-semibold text-gray-900`)}>{testimonial.name}</p>
+              <p className={tw(`text-sm text-indigo-600 font-medium`)}>{testimonial.role}</p>
+              <p className={tw(`text-sm text-gray-500`)}>{testimonial.company}</p>
             </div>
-          </figure>
-        </section>
+          </div>
+        ))}
+      </div>
+
+      <div className={tw(`mt-16 text-center`)}>
+        <p className={tw(`text-gray-600 text-lg mb-4`)}>¿Vos también querés estos resultados?</p>
+        <button className={tw(`bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition`)}>Hablá con nuestro equipo</button>
       </div>
     </div>
-  );
-};
+  </section>
+);
 
 export default SocialProof;

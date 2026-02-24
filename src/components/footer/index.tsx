@@ -1,81 +1,23 @@
 import { tw } from 'twind';
-import Button from '@/components/button';
-
-const productLinks = [`Features`, `Customers`, `Platform`, `Pricing`, `Enterprise`, `What's new?`];
-const aboutLinks = [`About Us`, `Careers`, `Leadership`, `Blog`, `Events`, `Press`];
-const resourceLinks = [
-  `Get started`,
-  `Guides`,
-  `Tools`,
-  `Case studies`,
-  `Solutions`,
-  `FAQs`,
-  `Help Center`,
-  `Training`,
-  `Other resources`,
-];
 
 const Footer = () => (
-  <footer className={tw(`bg-white border-t border-gray-400 pt-14 pb-16`)}>
-    <div className={tw(`max-w-7xl mx-auto text-gray-400 px-8 lg:px-0 flex flex-wrap`)}>
-      <div className={tw(`mb-14 flex items-center w-full`)}>
-        <img className={tw(`h-12 w-12 mr-4`)} src="logo.svg" alt="logo" width={48} height={48} />
-        <p className={tw(`text-4xl text-indigo-500 font-bold`)}>STARTD</p>
-      </div>
-      <div className={tw(`w-full lg:w-1/2`)}>
-        <ul className={tw(`text-lg font-light flex flex-wrap w-full`)}>
-          <li className={tw(`w-1/2 md:w-1/3 lg:w-1/3`)}>
-            <div>
-              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Product</h4>
-              <ul>
-                {productLinks.map((link) => (
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} key={link}>
-                    <a href="/">{link}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </li>
-          <li className={tw(`w-1/2 md:w-1/3 lg:w-1/3`)}>
-            <div>
-              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>Resources</h4>
-              <ul>
-                {resourceLinks.map((link) => (
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} key={link}>
-                    <a href="/">{link}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </li>
-          <li className={tw(`w-1/2 md:w-1/3 lg:w-1/3`)}>
-            <div>
-              <h4 className={tw(`text-gray-900 text-base font-bold mb-1`)}>About Us</h4>
-              <ul>
-                {aboutLinks.map((link) => (
-                  <li className={tw(`text-gray-800 text-sm font-medium leading-6`)} key={link}>
-                    <a href="/">{link}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div className={tw(`w-full lg:w-1/2 mt-12 lg:mt-0`)}>
-        <div className={tw(`border border-gray-400 rounded py-5 px-4`)}>
-          <h4 className={tw(`font-mono text-sm uppercase text-gray-500 mb-3`)}>Subscribe our newsletter</h4>
-          <div className={tw(`flex w-full`)}>
-            <input
-              aria-label="email address"
-              type="text"
-              className={tw(`border border-gray-300 bg-gray-100 min-w-0 w-full rounded text-gray-800 py-2 px-3 mr-2`)}
-              placeholder="Enter your email"
-            />
-            <Button>Subscribe</Button>
-          </div>
+  <footer className={tw(`bg-slate-900 border-t border-slate-700 pt-16 pb-8`)}>
+    <div className={tw(`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`)}>
+      <div className={tw(`grid grid-cols-1 md:grid-cols-3 gap-12 mb-12`)}>
+        <div>
+          <h3 className={tw(`text-white font-bold text-lg mb-4`)}>Concesionaria AI</h3>
+          <p className={tw(`text-gray-400 text-sm`)}>Automatización inteligente para concesionarias.<br />Powered by Hyppo.io</p>
+        </div>
+        <div>
+          <h4 className={tw(`text-white font-semibold mb-4`)}>Soluciones</h4>
+          <ul className={tw(`space-y-2 text-sm text-gray-400`)}><li><a href="#" className={tw(`hover:text-white transition`)}>GoChat IA</a></li><li><a href="#" className={tw(`hover:text-white transition`)}>CDP</a></li><li><a href="#" className={tw(`hover:text-white transition`)}>Growth Marketing</a></li></ul>
+        </div>
+        <div>
+          <h4 className={tw(`text-white font-semibold mb-4`)}>Empresa</h4>
+          <ul className={tw(`space-y-2 text-sm text-gray-400`)}><li><a href="https://hyppo.io" target="_blank" rel="noopener noreferrer" className={tw(`hover:text-white transition`)}>Hyppo.io</a></li><li><a href="#" className={tw(`hover:text-white transition`)}>Blog</a></li><li><a href="#" className={tw(`hover:text-white transition`)}>Contacto</a></li></ul>
         </div>
       </div>
+      <div className={tw(`border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center`)}><p className={tw(`text-gray-400 text-sm`)}>© 2026 Concesionaria AI. Todos los derechos reservados.</p><div className={tw(`flex gap-6 mt-4 md:mt-0`)}><a href="#" className={tw(`text-gray-400 hover:text-white text-sm transition`)}>Privacidad</a><a href="#" className={tw(`text-gray-400 hover:text-white text-sm transition`)}>Términos</a></div></div>
     </div>
   </footer>
 );

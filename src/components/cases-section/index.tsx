@@ -2,68 +2,98 @@ import { tw } from 'twind';
 import Arrow from '@/constants/svg/arrow.svg';
 
 
-const articles = [
+const benefits = [
   {
-    title: `Velit reprehenderit culpa Lorem reprehenderit excepteur ipsum esse.`,
-    image: `/images/case-1.webp`,
-    alt: `Proident pariatur est.`,
+    title: `Ahorra 45+ horas por semana`,
+    description: `Sin respuestas manuales, sin calificación manual, sin transfer de datos entre sistemas. Tu equipo vendedor se enfoca en vender.`,
+    metric: `45+ horas`,
   },
   {
-    title: `Velit reprehenderit culpa Lorem reprehenderit ipsum esse.`,
-    image: `/images/case-2.webp`,
-    alt: `Proident pariatur est.`,
+    title: `Atención 24/7 sin costo adicional`,
+    description: `Los bots responden a las 3 AM, califican leads mientras tu equipo duerme. Cero leads fríos, cero oportunidades perdidas.`,
+    metric: `0 leads`,
+    submetric: `perdidos`,
   },
   {
-    title: `Velit reprehenderit culpa Lorem reprehenderit excepteur esse.`,
-    image: `/images/case-3.webp`,
-    alt: `Proident pariatur est.`,
+    title: `Escala sin contratar más personal`,
+    description: `Cada lead nuevo no requiere un vendedor nuevo. El sistema se expande, no tu nómina. Margen operativo sano.`,
+    metric: `∞ leads`,
+    submetric: `mismo equipo`,
+  },
+  {
+    title: `Conversion Rate +35-50%`,
+    description: `Respuestas rápidas, seguimiento personalizado y calificación automática = más autos vendidos con el mismo tráfico.`,
+    metric: `+35-50%`,
+    submetric: `conversiones`,
+  },
+  {
+    title: `ROI transparente en Ads`,
+    description: `Sabes exactamente cuánto cuesta cada venta real. No gastás dinero en clics que no convierten.`,
+    metric: `100%`,
+    submetric: `attribution`,
+  },
+  {
+    title: `Decisiones basadas en datos`,
+    description: `Tu CDP genera insights automáticos. "El 60% que miró esta SUV compra en 7-10 días". Vende estadística, no intuición.`,
+    metric: `360°`,
+    submetric: `customer view`,
   },
 ];
 
 const CasesSection = () => (
   <section>
-    <div className={tw(`w-full min-h-screen bg-gray-900 relative`)}>
-      <div className={tw(`max-w-7xl mx-4 lg:mx-auto pt-20 lg:pt-40`)}>
-        <h1 className={tw(`text-white text-4xl lg:text-7xl font-bold text-center`)}>What will you build?</h1>
-        <p className={tw(`text-white text-gray-400 text-center text-xl mt-12`)}>
-          Don’t just take our word for it — see what leaders in digital are saying
-        </p>
-        <div className={tw(`mx-auto pt-24`)}>
-          <div className={tw(`w-full flex flex-wrap justify-around`)}>
-            {articles.map((article) => (
+    <div className={tw(`w-full bg-white py-20`)}>
+      <div className={tw(`max-w-7xl mx-4 lg:mx-auto`)}>
+        <div className={tw(`text-center mb-20`)}>
+          <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase mb-4`)}>
+            Resultados Reales
+          </h2>
+          <p className={tw(`text-4xl lg:text-5xl font-bold text-gray-900`)}>
+            En números que importan
+          </p>
+        </div>
+
+        <div className={tw(`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8`)}>
+            {benefits.map((benefit) => (
               <div
-                key={article.title}
+                key={benefit.title}
                 className={tw(
-                  `xl:w-1/3 sm:w-5/12 sm:max-w-xs relative mb-32 lg:mb-20
-                      xl:max-w-sm lg:w-1/2 w-11/12 mx-auto sm:mx-0 cursor-pointer hover:scale-105`,
+                  `bg-gradient-to-br from-slate-50 to-slate-100 rounded-lg p-8 border border-slate-200 hover:shadow-lg transition`,
                 )}
               >
-                <div className={tw(`h-64 z-20`)}>
-                  <img
-                    src={article.image}
-                    alt={article.alt}
-                    className={tw(`h-full w-full object-cover overflow-hidden rounded`)}
-                    width={400}
-                    height={300}
-                  />
+                <div className={tw(`mb-6`)}>
+                  <p className={tw(`text-indigo-600 text-4xl lg:text-5xl font-bold mb-1`)}>{benefit.metric}</p>
+                  {benefit.submetric && <p className={tw(`text-gray-600 text-sm uppercase tracking-wide`)}>{benefit.submetric}</p>}
                 </div>
-                <div className={tw(`p-4 shadow-lg w-full mx-auto -mt-8 bg-white rounded-b z-30 relative`)}>
-                  <p className={tw(`uppercase text-sm text-gray-700 text-center pb-1`)}>Case study</p>
-                  <p className={tw(`text-gray-500 text-center pb-1 text-sm`)}>{article.title}</p>
+
+                <h3 className={tw(`text-xl font-bold text-gray-900 mb-3`)}>{benefit.title}</h3>
+                <p className={tw(`text-gray-600 leading-relaxed`)}>{benefit.description}</p>
+
+                <div className={tw(`mt-6 h-32 bg-gradient-to-r from-indigo-100 to-indigo-50 rounded flex items-center justify-center text-gray-400 text-sm`)}>
+                  Chart Placeholder
                 </div>
               </div>
             ))}
-            <span
-              className={tw(
-                `-mt-8 pb-12 lg:mt-4 flex items-center text-xl
-                text-indigo-400 cursor-pointer z-30 hover:text-indigo-600`,
-              )}
-            >
-              See all case studies
-              <Arrow className={tw(`h-6 w-6 fill-current ml-2`)} />
-            </span>
-          </div>
         </div>
+      </div>
+    </div>
+
+    <div className={tw(`w-full bg-indigo-600 py-16`)}>
+      <div className={tw(`max-w-4xl mx-4 lg:mx-auto text-center`)}>
+        <h2 className={tw(`text-4xl lg:text-5xl font-bold text-white mb-6`)}>
+          ¿Cómo es que tu competencia ya usa esto?
+        </h2>
+        <p className={tw(`text-indigo-100 text-lg mb-8`)}>
+          Agendar una auditoría de tu stack tecnológico es gratis. Te mostramos cuánto dinero pierdes por mes en manual work.
+        </p>
+        <button
+          className={tw(
+            `bg-white text-indigo-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-indigo-50 transition inline-flex items-center gap-2`,
+          )}
+        >
+          Reservá tu consultoría
+          <Arrow className={tw(`h-5 w-5`)} />
+        </button>
       </div>
     </div>
   </section>
