@@ -88,9 +88,9 @@ const Header = () => {
               <Button primary modifier="px-8 py-4 text-lg shadow-xl hover:scale-105 transition-transform">
                 Agendá una demo
               </Button>
-              <Button modifier="px-8 py-4 text-lg bg-slate-800 border-slate-700 text-white hover:bg-slate-700 transition-colors">
+              <a href="#como-funciona" className={tw(`inline-flex items-center px-8 py-4 text-lg bg-slate-800 border border-slate-700 text-white rounded-lg hover:bg-slate-700 transition-colors`)}>
                 Ver cómo funciona
-              </Button>
+              </a>
             </div>
 
           <div className={tw(`mt-12 pt-8 border-t border-slate-800`)}>
