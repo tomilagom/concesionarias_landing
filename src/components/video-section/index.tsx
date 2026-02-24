@@ -32,21 +32,17 @@ const VideoSection = () => (
         </div>
 
         <div className={tw(`lg:w-1/2 flex justify-center`)}>
-          <div className={tw(`relative group`)}>
-            {/* Phone Frame Decoration */}
-            <div className={tw(`absolute -inset-4 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-[3rem] blur opacity-20 group-hover:opacity-40 transition-opacity`)}></div>
-              <video
-                className={tw(`rounded-[2rem] w-full max-w-[320px] h-auto shadow-inner`)}
-                autoPlay
-                loop
-                muted
-                playsInline
-                poster="/images/video-poster.jpg"
-              >
-                <source src="/images/gochat-automotive.webm" type="video/webm" />
-                Tu navegador no soporta videos.
-              </video>
-            </div>
+          <video
+            className={tw(`rounded-3xl w-full max-w-[400px] h-auto shadow-2xl`)}
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster="/images/video-poster.jpg"
+          >
+            <source src="/images/gochat-automotive.webm" type="video/webm" />
+            Tu navegador no soporta videos.
+          </video>
         </div>
       </div>
     </div>
