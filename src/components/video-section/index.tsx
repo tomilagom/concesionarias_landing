@@ -37,7 +37,7 @@ const VideoSection = () => (
             </p>
             <div className={tw(`grid grid-cols-2 sm:grid-cols-3 gap-4`)}>
               {[
-                { name: 'KIA', phone: '595981669999', logo: 'kia.png' },
+                { name: 'KIA', phone: '595981669999', logo: 'kia.jpg' },
                 { name: 'Jeep', phone: '595984133200', logo: 'jeep.png' },
                 { name: 'Fiat', phone: '595986111250', logo: 'fiat.png' },
                 { name: 'Nissan', phone: '595986685555', logo: 'nissan.png' },
