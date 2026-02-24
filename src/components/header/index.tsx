@@ -106,30 +106,26 @@ const Header = () => {
         <div className={tw(`relative lg:ml-4`)}>
           <div className={tw(`absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-2xl blur opacity-20`)}></div>
           <div className={tw(`relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 border-opacity-50 bg-slate-900 bg-opacity-50 backdrop-blur-xl`)}>
-            <div className={tw(`w-full h-[450px] flex flex-col`)}>
+            <div className={tw(`w-full min-h-[500px] flex flex-col`)}>
               {/* Fake Window Header */}
-              <div className={tw(`flex items-center gap-2 px-4 py-3 bg-slate-800 bg-opacity-50 border-b border-slate-700 border-opacity-50`)}>
-                <div className={tw(`w-3 h-3 rounded-full bg-red-500 bg-opacity-50`)}></div>
-                <div className={tw(`w-3 h-3 rounded-full bg-yellow-500 bg-opacity-50`)}></div>
-                <div className={tw(`w-3 h-3 rounded-full bg-green-500 bg-opacity-50`)}></div>
-                <div className={tw(`ml-4 h-4 w-32 bg-slate-700 bg-opacity-50 rounded-full`)}></div>
+              <div className={tw(`flex items-center justify-between px-4 py-3 bg-slate-800 bg-opacity-50 border-b border-slate-700 border-opacity-50`)}>
+                <div className={tw(`flex gap-2`)}>
+                  <div className={tw(`w-3 h-3 rounded-full bg-red-500 bg-opacity-50`)}></div>
+                  <div className={tw(`w-3 h-3 rounded-full bg-yellow-500 bg-opacity-50`)}></div>
+                  <div className={tw(`w-3 h-3 rounded-full bg-green-500 bg-opacity-50`)}></div>
+                </div>
+                <div className={tw(`text-[10px] text-slate-500 font-mono uppercase tracking-widest`)}>Agendar Demo</div>
               </div>
-              {/* Content Placeholder */}
-              <div className={tw(`flex-1 p-6 flex flex-col gap-4`)}>
-                <div className={tw(`flex gap-4`)}>
-                  <div className={tw(`w-1/3 h-24 bg-indigo-500 bg-opacity-10 rounded-xl border border-indigo-500 border-opacity-20`)}></div>
-                  <div className={tw(`w-2/3 h-24 bg-slate-800 bg-opacity-50 rounded-xl`)}></div>
-                </div>
-                <div className={tw(`flex-1 bg-slate-800 bg-opacity-30 rounded-xl border border-slate-700 border-opacity-30 p-4`)}>
-                  <div className={tw(`flex flex-col gap-2`)}>
-                    <div className={tw(`h-4 w-3/4 bg-slate-700 bg-opacity-50 rounded-full`)}></div>
-                    <div className={tw(`h-4 w-1/2 bg-slate-700 bg-opacity-50 rounded-full`)}></div>
-                    <div className={tw(`mt-4 flex gap-2`)}>
-                      <div className={tw(`w-8 h-8 rounded-full bg-indigo-500 bg-opacity-20`)}></div>
-                      <div className={tw(`flex-1 h-20 bg-indigo-500 bg-opacity-5 rounded-r-xl rounded-bl-xl border border-indigo-500 border-opacity-10`)}></div>
-                    </div>
-                  </div>
-                </div>
+              {/* Form Embed */}
+              <div className={tw(`flex-1`)}>
+                <iframe 
+                  id="fluentform" 
+                  width="100%" 
+                  loading="lazy" 
+                  height="500px" 
+                  style={{ minHeight: '500px', width: '100%', background: 'transparent' }} 
+                  src="https://hyppo.io/?ff_landing=40&embedded=1"
+                ></iframe>
               </div>
             </div>
           </div>
