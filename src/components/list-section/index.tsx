@@ -11,15 +11,15 @@ const listItems = [
   },
   {
     title: `Leads que se enfrían mientras esperas`,
-    description: `Un prospecto interesado en tu SUV roja espera 24 horas por respuesta de un vendedor. Compra otra marca porque no le respondiste.`,
+    description: `Un interesado en una Hilux espera 4 horas una respuesta. Cuando tu vendedor contesta, ya cerró trato con la competencia.`,
   },
   {
     title: `Sin personalización en el seguimiento`,
     description: `Envías la misma campaña a todos. No existe segmentación por modelo de auto, presupuesto o intención de compra real.`,
   },
   {
-    title: `Escalas contratando más personal`,
-    description: `Cada lead nuevo = más vendedores. Tu COGS crece mientras los leads no califican. Es insostenible.`,
+    title: `Vendedores haciendo de secretarios`,
+    description: `Tus mejores cerradores pierden 4 horas al día calificando curiosos en WhatsApp en lugar de estar vendiendo en el salón.`,
   },
   {
     title: `No sabes qué estrategia funciona realmente`,
@@ -32,10 +32,10 @@ const ListSection = () => (
     <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8`)}>
       <div className={tw(`mb-20 text-center`)}>
         <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase mb-4`)}>
-          El Problema Real
+          Tus dolores de cabeza diarios
         </h2>
         <p className={tw(`text-4xl lg:text-5xl font-bold tracking-tight text-slate-900`)}>
-          Tu operación no está hecha para hoy
+          ¿Por qué tu equipo de ventas no llega al objetivo?
         </p>
       </div>
       <div className={tw(`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8`)}>

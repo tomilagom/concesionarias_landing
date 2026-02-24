@@ -3,19 +3,19 @@ import Check from '@/constants/svg/check.svg';
 
 const solutions = [
   {
-    title: `GoChat & IA Conversacional`,
-    description: `Bots omnicanal (WhatsApp, Instagram) que califican leads 24/7 con preguntas inteligentes sobre modelo, presupuesto e intención. Cuando está listo, deriva automáticamente al vendedor. Fin de las respuestas manuales a las 3 AM.`,
-    benefits: [`Calificación automática 24/7`, `Agende visitas al salón`, `WhatsApp + Instagram`, `Integración con CRM`],
+    title: `Respuesta Inmediata & Calificación`,
+    description: `Tus clientes no esperan. Respondemos en segundos por WhatsApp e Instagram, 24/7. La IA califica intenciones de compra, consulta stock y solo deriva leads listos a tus vendedores.`,
+    benefits: [`Atención 24/7 sin esperas`, `Consulta de stock real`, `Agenda de Test Drives`, `Filtro de curiosos`],
   },
   {
-    title: `CDP & Customer.io`,
-    description: `Centralización total de datos. Sabes exactamente qué auto miró cada cliente, en qué momento, desde qué dispositivo. Envía campañas hiper-personalizadas: "Vimos que te interesó esta SUV roja, acaba de bajar $3K de precio, ¿hablamos?".`,
-    benefits: [`Base de datos limpia`, `Segmentación avanzada`, `Viajes de cliente en tiempo real`, `Historial 360° por cliente`],
+    title: `Seguimiento Automático de Inventario`,
+    description: `No pierdas ventas por falta de seguimiento. Si entra un modelo que buscaba un cliente antiguo, la IA le avisa automáticamente. Reactiva tu base de datos y genera ventas de oportunidades perdidas.`,
+    benefits: [`Reactiva base de datos`, `Alertas de stock`, `Seguimiento post-venta`, `Servicio técnico`],
   },
   {
-    title: `Paid Media con Growth Mindset`,
-    description: `Meta Ads y Google Ads que hablan con tu CDP. Optimizamos por ventas reales, no por clics. Cada peso invertido se conecta directamente con conversiones confirmadas en tu CRM.`,
-    benefits: [`Optimización por conversión`, `Attribution real`, `Presupuesto inteligente`, `ROAS visible`],
+    title: `Inversión Inteligente (ROAS)`,
+    description: `Deja de pagar por clics vacíos. Optimizamos tus campañas de Meta y Google Ads buscando compradores reales, no solo curiosos. Conecta tu inversión publicitaria directamente con los contratos firmados.`,
+    benefits: [`Optimización por venta`, `Calidad sobre cantidad`, `Reportes claros`, `Menor Costo por Lead`],
   },
 ];
 
@@ -26,12 +26,12 @@ const FeatureSection = () => (
 
     <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 relative z-10`)}>
       <div className={tw(`mb-20 text-center`)}>
-        <h2 className={tw(`text-base text-indigo-400 font-semibold tracking-wide uppercase mb-4`)}>La Solución</h2>
+        <h2 className={tw(`text-base text-indigo-400 font-semibold tracking-wide uppercase mb-4`)}>Potencia tu Concesionaria</h2>
         <p className={tw(`text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6`)}>
-          El Sistema Operativo para tu Concesionaria
+          Tecnología diseñada para Gerentes de Ventas exigentes
         </p>
         <p className={tw(`text-slate-400 text-lg max-w-2xl mx-auto`)}>
-          Combinamos Inteligencia Artificial con una infraestructura de datos robusta para escalar tus ventas.
+          Deja que la IA se encargue de lo repetitivo mientras tu equipo se enfoca en cerrar ventas.
         </p>
       </div>
 

@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <Page>
       <NextSeo
-        title="Concesionaria AI - Automatización para Concesionarias"
-        description="Automatiza tu concesionaria con IA conversacional, CDP y growth marketing. Califica leads 24/7 y aumenta conversiones sin contratar más personal."
+        title="GrowHyppo - Tu equipo de ventas IA experto en autos"
+        description="Convierte consultas en ventas reales. Nuestra IA califica leads, agenda test drives y reactiva tu base de datos automáticamente. Ideal para gerentes de ventas exigentes."
       />
       <Header />
       <main>

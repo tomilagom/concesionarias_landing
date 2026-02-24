@@ -22,9 +22,9 @@ const benefits = [
   },
   {
     title: `Conversion Rate +35-50%`,
-    description: `Respuestas rápidas, seguimiento personalizado y calificación automática = más autos vendidos con el mismo tráfico.`,
+    description: `Más test drives agendados y más ventas cerradas. Tu equipo solo habla con quienes ya tienen el dinero en mano.`,
     metric: `+35-50%`,
-    submetric: `conversiones`,
+    submetric: `ventas cerradas`,
   },
   {
     title: `ROI transparente en Ads`,

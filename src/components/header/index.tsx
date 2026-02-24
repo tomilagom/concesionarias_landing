@@ -32,7 +32,7 @@ const Header = () => {
   const [wordIndex, setWordIndex] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const words = ['pierde el 80%', 'gana el 100%'];
+  const words = ['siempre activo', 'experto en autos', 'que sí vende'];
 
   useEffect(() => {
     const handleTyping = () => {
@@ -79,10 +79,10 @@ const Header = () => {
             </div>
             <h1 className={tw(`font-sans font-extrabold text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-white mb-8 tracking-tight`)}>
               Tu equipo de ventas <span className={tw(`text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400`)}>{displayText}</span>
-              <span className={tw(cursorStyle)}></span> del día.
+              <span className={tw(cursorStyle)}></span>
             </h1>
             <p className={tw(`text-lg lg:text-xl text-slate-400 max-w-xl mb-10 leading-relaxed`)}>
-              Dejá de perseguir leads fríos. Centralizamos tu data y usamos IA para calificar prospectos 24/7. Tus vendedores solo hablan con quienes <span className={tw(`text-white font-semibold`)}>realmente quieren comprar</span>.
+              Atiende a tus clientes 24/7, califica leads automáticamente y agenda test drives sin intervención humana. Deja que tus vendedores se enfoquen en <span className={tw(`text-white font-semibold`)}>cerrar tratos, no en filtrar curiosos</span>.
             </p>
             <div className={tw(`flex flex-wrap gap-4`)}>
               <Button primary modifier="px-8 py-4 text-lg shadow-xl hover:scale-105 transition-transform">
