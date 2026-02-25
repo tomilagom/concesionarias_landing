@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <Page>
       <NextSeo
-        title="Concesionaria AI - Tu equipo de ventas IA experto en autos"
+        title="ConcesionarIA - Tu equipo de ventas IA experto en autos"
         description="Convierte consultas en ventas reales. Nuestra IA califica leads, agenda test drives y reactiva tu base de datos automáticamente. Ideal para gerentes de ventas exigentes."
       />
       <Header />

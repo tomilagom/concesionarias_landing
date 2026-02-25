@@ -5,7 +5,7 @@ const Footer = () => (
     <div className={tw(`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`)}>
       <div className={tw(`grid grid-cols-1 md:grid-cols-3 gap-12 mb-12`)}>
         <div>
-          <h3 className={tw(`text-white font-bold text-lg mb-4`)}>Concesionaria AI</h3>
+          <h3 className={tw(`text-white font-bold text-lg mb-4`)}>ConcesionarIA</h3>
           <p className={tw(`text-gray-400 text-sm mb-6`)}>Automatización inteligente para concesionarias.<br />Powered by Hyppo.io</p>
           <div className={tw(`flex gap-4 items-center opacity-50`)}>
             <img className={tw(`h-5 w-auto`)} src="/images/whatsapp-logo.png" alt="WhatsApp" />
@@ -24,7 +24,7 @@ const Footer = () => (
         </div>
       </div>
       <div className={tw(`border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center`)}>
-        <p className={tw(`text-gray-400 text-sm`)}>© 2026 Concesionaria AI. Todos los derechos reservados.</p>
+        <p className={tw(`text-gray-400 text-sm`)}>© 2026 ConcesionarIA. Todos los derechos reservados.</p>
         <div className={tw(`flex gap-6 mt-4 md:mt-0`)}><a href="#" className={tw(`text-gray-400 hover:text-white text-sm transition`)}>Privacidad</a><a href="#" className={tw(`text-gray-400 hover:text-white text-sm transition`)}>Términos</a></div></div>
     </div>
   </footer>

@@ -11,7 +11,7 @@ const Navigation = () => {
               <div className={tw(`w-15 h-15 bg-white-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20`)}>
                 <img className={tw(`h-12 w-12`)} src="logo.svg" alt="logo" width={24} height={24} />
               </div>
-              <span className={tw(`text-white font-bold text-xl tracking-tight`)}>Concesionaria AI</span>
+              <span className={tw(`text-white font-bold text-xl tracking-tight`)}>ConcesionarIA</span>
             </div>
           </div>
           <div className={tw(`flex items-center`)}>

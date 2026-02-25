@@ -3,19 +3,19 @@ import Quote from '@/constants/svg/quote.svg';
 
 const testimonials = [
   {
-    name: `Juan Martínez`,
+    name: `Juan Brunel`,
     role: `Gerente de Ventas`,
     company: `Concesionaria Toyota`,
     text: `Implementamos GoChat hace 3 meses. Los leads que antes se dormían ahora tienen seguimiento 24/7. Nuestro conversion rate subió 42% sin aumentar publicidad.`,
   },
   {
-    name: `María García`,
+    name: `María Finnocciaro`,
     role: `Directora de Marketing`,
     company: `Grupo Automotriz AAA`,
-    text: `El CDP cambió nuestro juego. Ahora sabemos exactamente qué auto miró cada cliente y le mandamos la promo correcta en el momento correcto. Cero guesswork.`,
+    text: `La nueva arquitectura de data cambió nuestro juego. Ahora sabemos exactamente qué auto miró cada cliente y le mandamos la promo correcta en el momento correcto. Cero guesswork.`,
   },
   {
-    name: `Carlos López`,
+    name: `Juan Carlos Almada`,
     role: `Propietario`,
     company: `Concesionario Independiente`,
     text: `Teníamos datos fragmentados en 5 plataformas diferentes. Hyppo los centralizó todo. Mi equipo ahora ahorra 30+ horas por semana contestando lo mismo.`,
