@@ -46,7 +46,14 @@ const SocialProof = () => (
 
       <div className={tw(`mt-16 text-center`)}>
         <p className={tw(`text-gray-600 text-lg mb-4`)}>¿Vos también querés estos resultados?</p>
-        <button className={tw(`bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition`)}>Hablá con nuestro equipo</button>
+        <a
+          href="https://crm.hyppo.io/widget/bookings/piorichards-concesionarias-ai"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={tw(`bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition inline-block`)}
+        >
+          Hablá con nuestro equipo
+        </a>
       </div>
     </div>
   </section>

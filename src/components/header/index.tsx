@@ -8,6 +8,9 @@ const headerStyle = css`
     radial-gradient(at 0% 0%, rgba(79, 70, 229, 0.15) 0px, transparent 50%),
     radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.1) 0px, transparent 50%);
   min-height: calc(100vh - 5rem);
+  @media (max-width: 768px) {
+    min-height: calc(100vh - 4rem);
+  }
   display: flex;
   align-items: center;
 `;
@@ -68,7 +71,7 @@ const Header = () => {
         <div className={tw(`absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500 bg-opacity-10 blur-[120px] rounded-full`)}></div>
       </div>
 
-      <div className={tw(`max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8 relative z-10`)}>
+      <div className={tw(`max-w-7xl mx-auto py-12 md:py-20 px-4 sm:px-6 lg:px-8 relative z-10`)}>
         <div className={tw(`grid lg:grid-cols-2 gap-12 items-center`)}>
           <div className={tw(`text-left`)}>
             <div className={tw(`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500 bg-opacity-10 border border-indigo-500 border-opacity-20 mb-6`)}>
@@ -77,7 +80,7 @@ const Header = () => {
                 Powered by Hyppo IA
               </p>
             </div>
-            <h1 className={tw(`font-sans font-extrabold text-5xl md:text-6xl lg:text-7xl leading-[1.1] text-white mb-8 tracking-tight`)}>
+            <h1 className={tw(`font-sans font-extrabold text-4xl md:text-6xl lg:text-7xl leading-[1.1] text-white mb-8 tracking-tight`)}>
               Tu equipo de ventas <span className={tw(`text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400`)}>{displayText}</span>
               <span className={tw(cursorStyle)}></span>
             </h1>
