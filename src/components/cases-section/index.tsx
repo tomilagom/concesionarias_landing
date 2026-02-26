@@ -18,23 +18,23 @@ const benefits = [
     title: `Escala sin contratar más personal`,
     description: `Cada lead nuevo no requiere un vendedor nuevo. El sistema se expande, no tu nómina. Margen operativo sano.`,
     metric: `∞ leads`,
-    submetric: `mismo equipo`,
+    submetric: `con mismo equipo`,
   },
   {
-    title: `Conversion Rate +35-50%`,
-    description: `Más test drives agendados y más ventas cerradas. Tu equipo solo habla con quienes ya tienen el dinero en mano.`,
-    metric: `+35-50%`,
-    submetric: `test drives programados`,
+    title: `Evaluación de vendedores en tiempo real`,
+    description: `Conoce el desempeño de tu equipo al instante. ¿Quién convierte mejor? ¿Quién responde más rápido? Datos para decisiones de gestión, no solo intuición.`,
+    metric: `100%`,
+    submetric: `evaluación en tiempo real`,
   },
   {
     title: `ROI transparente en Ads`,
     description: `Sabes exactamente cuánto cuesta cada venta real. No gastás dinero en clics que no convierten.`,
     metric: `100%`,
-    submetric: `attribution`,
+    submetric: `atribución de ventas`,
   },
   {
     title: `Decisiones basadas en datos`,
-    description: `Tu CDP genera insights automáticos. "El 60% que miró esta SUV compra en 7-10 días". Vende estadística, no intuición.`,
+    description: `Tu CRM genera insights automáticos. "El 60% que miró esta SUV compra en 7-10 días". Vende estadística, no intuición.`,
     metric: `360°`,
     submetric: `customer view`,
   },
@@ -49,7 +49,7 @@ const CasesSection = () => (
             Resultados Reales
           </h2>
           <p className={tw(`text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight`)}>
-            En números que importan
+            Métricas que impactan tu negocio
           </p>
         </div>
 
@@ -85,7 +85,7 @@ const CasesSection = () => (
           ¿Cómo es que tu competencia <br/>ya usa esto?
         </h2>
         <p className={tw(`text-slate-400 text-lg mb-10 max-w-2xl mx-auto leading-relaxed`)}>
-          Agendar una auditoría de tu stack tecnológico es gratis. Te mostramos cuánto dinero pierdes por mes en <span className={tw(`text-white underline decoration-indigo-500 underline-offset-4`)}>trabajo manual</span>.
+          Agendar una auditoría de tu stack tecnológico. Te mostramos cuánto dinero pierdes por mes en <span className={tw(`text-white underline decoration-indigo-500 underline-offset-4`)}>trabajo manual</span>.
         </p>
         <a
           href="https://crm.hyppo.io/widget/bookings/piorichards-concesionarias-ai"
@@ -95,7 +95,7 @@ const CasesSection = () => (
             `bg-indigo-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-indigo-500 hover:shadow-2xl transition-all active:scale-95 inline-flex items-center gap-3`,
           )}
         >
-          Reservá tu consultoría gratuita
+          Reservá tu consultoría
           <Arrow className={tw(`h-5 w-5`)} />
         </a>
       </div>

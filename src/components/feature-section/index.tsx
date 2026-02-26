@@ -6,7 +6,7 @@ const solutions = [
   {
     title: `Respuesta Inmediata & Calificación`,
     description: `Tus clientes no esperan. Respondemos en segundos por WhatsApp e Instagram, 24/7. La IA califica intenciones de compra, consulta stock y solo deriva leads listos a tus vendedores.`,
-    benefits: [`Atención 24/7 sin esperas`, `Consulta de stock real`, `Agenda de Test Drives`, `Filtro de curiosos`],
+    benefits: [`Atención 24/7 sin esperas`, `Consulta de stock real`, `Agenda de Test Drives`, `Filtro de leads de baja calidad`],
   },
   {
     title: `Seguimiento Automático de Inventario`,

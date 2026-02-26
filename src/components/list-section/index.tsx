@@ -12,7 +12,7 @@ const listItems = [
   },
   {
     title: `Leads que se enfrían mientras esperas`,
-    description: `Un interesado en una Hilux espera 4 horas una respuesta. Cuando tu vendedor contesta, ya cerró trato con la competencia.`,
+    description: `Un interesado en el Fiat Cronos espera 4 horas una respuesta. Cuando tu vendedor contesta, ya cerró trato con la competencia.`,
   },
   {
     title: `Sin personalización en el seguimiento`,
@@ -20,7 +20,7 @@ const listItems = [
   },
   {
     title: `Vendedores haciendo de secretarios`,
-    description: `Tus mejores cerradores pierden 4 horas al día calificando curiosos en WhatsApp en lugar de estar vendiendo en el salón.`,
+    description: `Tus mejores vendedores pierden 4 horas al día calificando leads en WhatsApp en lugar de estar vendiendo.`,
   },
   {
     title: `No sabes qué estrategia funciona realmente`,
