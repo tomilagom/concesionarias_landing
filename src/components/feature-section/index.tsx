@@ -76,27 +76,6 @@ const FeatureSection = () => (
           </FadeIn>
         ))}
       </div>
-
-      <FadeIn delay={400}>
-        <div className={tw(`mt-16 bg-gradient-to-r from-indigo-600 to-blue-600 rounded-3xl p-1 lg:p-1.5 shadow-2xl`)}>
-          <div className={tw(`bg-slate-900 rounded-[calc(1.5rem-4px)] p-8 text-center`)}>
-            <p className={tw(`text-indigo-400 text-sm font-bold uppercase tracking-widest mb-4`)}>
-              Data Flow Integration
-            </p>
-            <div className={tw(`flex flex-wrap justify-center items-center gap-3 text-white font-medium`)}>
-              <span className={tw(`px-3 py-1 bg-slate-800 rounded-lg border border-slate-700`)}>Meta Ads</span>
-              <span className={tw(`text-slate-600`)}>→</span>
-              <span className={tw(`px-3 py-1 bg-indigo-900 bg-opacity-50 text-indigo-300 rounded-lg border border-indigo-500 border-opacity-30`)}>GoChat IA</span>
-              <span className={tw(`text-slate-600`)}>→</span>
-              <span className={tw(`px-3 py-1 bg-slate-800 rounded-lg border border-slate-700`)}>CDP</span>
-              <span className={tw(`text-slate-600`)}>→</span>
-              <span className={tw(`px-3 py-1 bg-slate-800 rounded-lg border border-slate-700`)}>Customer.io</span>
-              <span className={tw(`text-slate-600`)}>→</span>
-              <span className={tw(`px-3 py-1 bg-green-900 bg-opacity-50 text-green-300 rounded-lg border border-green-500 border-opacity-30`)}>Venta</span>
-            </div>
-          </div>
-        </div>
-      </FadeIn>
     </div>
   </section>
 );

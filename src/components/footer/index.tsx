@@ -9,9 +9,9 @@ const Footer = () => (
           <p className={tw(`text-gray-400 text-sm mb-6`)}>Automatización inteligente para concesionarias.<br />Powered by Hyppo.io</p>
           <div className={tw(`flex gap-4 items-center opacity-50`)}>
             <img className={tw(`h-5 w-auto`)} src="/images/whatsapp-logo.png" alt="WhatsApp" />
-            <img className={tw(`h-5 w-auto`)} src="/images/meta-business-partner-logo.png" alt="Meta" />
-            <img className={tw(`h-5 w-auto`)} src="/images/instagram-logo.png" alt="Instagram" />
-            <img className={tw(`h-5 w-auto`)} src="/images/google-ads-ogo.png" alt="Google Ads" />
+            <img className={tw(`h-8 w-auto`)} src="/images/meta-business-partner-logo.png" alt="Meta" />
+            <img className={tw(`h-6 w-auto`)} src="/images/instagram-logo.png" alt="Instagram" />
+            <img className={tw(`h-9 w-auto`)} src="/images/google-ads-ogo.png" alt="Google Ads" />
           </div>
         </div>
         <div>
