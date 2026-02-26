@@ -1,4 +1,5 @@
 import { tw } from 'twind';
+import FadeIn from '@/components/scroll-reveal';
 
 const listItems = [
   {

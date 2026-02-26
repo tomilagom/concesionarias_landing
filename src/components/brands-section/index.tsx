@@ -1,4 +1,5 @@
 import { tw } from 'twind';
+import FadeIn from '@/components/scroll-reveal';
 
 const brands = [
   { name: 'Nissan', logo: '/images/nissan.png' },
@@ -13,19 +14,22 @@ const brands = [
 const BrandsSection = () => (
   <section className={tw(`py-12 bg-white border-b border-gray-100`)}>
     <div className={tw(`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`)}>
-      <p className={tw(`text-left text-sm font-bold text-slate-500 uppercase tracking-widest mb-10`)}>
-        Algunos de nuestros clientes:
-      </p>
-      <div className={tw(`flex flex-wrap justify-center items-center gap-x-12 gap-y-8 md:gap-x-20`)}>
-        {brands.map((brand) => (
-          <img
-            key={brand.name}
-            src={brand.logo}
-            alt={brand.name}
-            className={tw(`h-12 md:h-14 w-auto object-contain`)}
-          />
-        ))}
-      </div>
+      <FadeIn>
+        <p className={tw(`text-left text-sm font-bold text-slate-500 uppercase tracking-widest mb-10`)}>
+          Algunos de nuestros clientes:
+        </p>
+        <div className={tw(`flex flex-wrap justify-center items-center gap-x-12 gap-y-8 md:gap-x-20`)}>
+          {brands.map((brand, index) => (
+            <div key={brand.name} style={{ transitionDelay: `${index * 100}ms` }}>
+              <img
+                src={brand.logo}
+                alt={brand.name}
+                className={tw(`h-12 md:h-14 w-auto object-contain`)}
+              />
+            </div>
+          ))}
+        </div>
+      </FadeIn>
     </div>
   </section>
 );

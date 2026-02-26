@@ -67,8 +67,8 @@ const Header = () => {
     <header className={tw(headerStyle, `relative overflow-hidden`)}>
       {/* Decorative background elements */}
       <div className={tw(`absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none`)}>
-        <div className={tw(`absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-500 bg-opacity-10 blur-[120px] rounded-full`)}></div>
-        <div className={tw(`absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500 bg-opacity-10 blur-[120px] rounded-full`)}></div>
+        <div className={tw(`absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-500 bg-opacity-10 blur-[120px] rounded-full animate-pulse`)}></div>
+        <div className={tw(`absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500 bg-opacity-10 blur-[120px] rounded-full animate-pulse`)} style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className={tw(`max-w-7xl mx-auto py-12 md:py-20 px-4 sm:px-6 lg:px-8 relative z-10`)}>
