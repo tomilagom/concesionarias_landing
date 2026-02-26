@@ -24,7 +24,7 @@ const benefits = [
     title: `Conversion Rate +35-50%`,
     description: `Más test drives agendados y más ventas cerradas. Tu equipo solo habla con quienes ya tienen el dinero en mano.`,
     metric: `+35-50%`,
-    submetric: `ventas cerradas`,
+    submetric: `test drives programados`,
   },
   {
     title: `ROI transparente en Ads`,

@@ -6,17 +6,19 @@ const testimonials = [
     name: `Juan Brunel`,
     role: `Gerente de Ventas`,
     company: `Concesionaria Toyota`,
+    image: `/images/testimonial-person-1.webp`,
     text: `Implementamos GoChat hace 3 meses. Los leads que antes se dormían ahora tienen seguimiento 24/7. Nuestro conversion rate subió 42% sin aumentar publicidad.`,
-  },
-  {
-    name: `María Finnocciaro`,
-    role: `Directora de Marketing`,
-    company: `Grupo Automotriz AAA`,
-    text: `La nueva arquitectura de data cambió nuestro juego. Ahora sabemos exactamente qué auto miró cada cliente y le mandamos la promo correcta en el momento correcto. Cero guesswork.`,
   },
   {
     name: `Juan Carlos Almada`,
     role: `Propietario`,
+    company: `Grupo Automotriz AAA`,
+    image: `/images/testimonial-person-2.webp`,
+    text: `La nueva arquitectura de data cambió nuestro juego. Ahora sabemos exactamente qué auto miró cada cliente y le mandamos la promo correcta en el momento correcto. Cero guesswork.`,
+  },
+  {
+    name: `María Finnocciaro`,
+    role: `Directora de Marketing`,
     company: `Concesionario Independiente`,
     text: `Teníamos datos fragmentados en 5 plataformas diferentes. Hyppo los centralizó todo. Mi equipo ahora ahorra 30+ horas por semana contestando lo mismo.`,
   },
@@ -33,7 +35,20 @@ const SocialProof = () => (
       <div className={tw(`grid grid-cols-1 md:grid-cols-3 gap-8`)}>
         {testimonials.map((testimonial) => (
           <div key={testimonial.name} className={tw(`bg-white rounded-lg p-8 border border-gray-200 shadow-sm hover:shadow-md transition`)}>
-            <Quote className={tw(`w-8 h-8 text-indigo-400 mb-4`)} />
+            <div className={tw(`flex items-center mb-6`)}>
+              {testimonial.image ? (
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className={tw(`w-12 h-12 rounded-full object-cover mr-4 border-2 border-indigo-100`)}
+                />
+              ) : (
+                <div className={tw(`w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mr-4`)}>
+                  <span className={tw(`text-indigo-600 font-bold`)}>{testimonial.name[0]}</span>
+                </div>
+              )}
+              <Quote className={tw(`w-6 h-6 text-indigo-400 ml-auto`)} />
+            </div>
             <p className={tw(`text-gray-700 leading-relaxed mb-6 text-sm lg:text-base`)}>"{testimonial.text}"</p>
             <div className={tw(`border-t border-gray-200 pt-6`)}>
               <p className={tw(`font-semibold text-gray-900`)}>{testimonial.name}</p>
@@ -45,7 +60,7 @@ const SocialProof = () => (
       </div>
 
       <div className={tw(`mt-16 text-center`)}>
-        <p className={tw(`text-gray-600 text-lg mb-4`)}>¿Vos también querés estos resultados?</p>
+        <p className={tw(`text-gray-600 text-lg mb-4`)}>De 'Info' a test drive en segundos</p>
         <a
           href="https://crm.hyppo.io/widget/bookings/piorichards-concesionarias-ai"
           target="_blank"

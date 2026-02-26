@@ -35,7 +35,7 @@ const Header = () => {
   const [wordIndex, setWordIndex] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const words = ['siempre activo', 'experto en autos', 'que sí vende'];
+  const words = ['siempre activo', 'experto en autos', 'consigue test drives', 'califica leads', 'nunca duerme'];
 
   useEffect(() => {
     const handleTyping = () => {
@@ -77,7 +77,7 @@ const Header = () => {
             <div className={tw(`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500 bg-opacity-10 border border-indigo-500 border-opacity-20 mb-6`)}>
               <span className={tw(`w-2 h-2 rounded-full bg-indigo-400 animate-pulse`)}></span>
               <p className={tw(`text-indigo-400 font-mono text-xs font-bold tracking-widest uppercase`)}>
-                Powered by Hyppo IA
+                Atención inmediata 24/7 con IA
               </p>
             </div>
             <h1 className={tw(`font-sans font-extrabold text-4xl md:text-6xl lg:text-7xl leading-[1.1] text-white mb-8 tracking-tight`)}>
