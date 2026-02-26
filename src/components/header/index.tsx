@@ -35,7 +35,7 @@ const Header = () => {
   const [wordIndex, setWordIndex] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const words = ['siempre activo', 'experto en autos', 'consigue test drives', 'califica leads', 'nunca duerme'];
+  const words = ['siempre activo', 'consigue test drives', 'califica leads', 'nunca duerme'];
 
   useEffect(() => {
     const handleTyping = () => {
