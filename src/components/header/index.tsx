@@ -103,7 +103,7 @@ const Header = () => {
 
           <div className={tw(`mt-12 pt-8 border-t border-slate-800`)}>
             <p className={tw(`text-sm text-slate-500 mb-6 font-medium uppercase tracking-wider`)}>Integrado con los líderes</p>
-            <div className={tw(`flex flex-wrap gap-8 items-center opacity-70`)}>
+            <div className={tw(`flex flex-wrap gap-8 items-center opacity-80`)}>
               <img className={tw(`h-12 w-auto`)} src="/images/meta-business-partner-logo.png" alt="Meta" />
               <img className={tw(`h-14 w-auto object-contain`)} src="/images/google-ads-ogo.png" alt="Google Ads" />
               <img className={tw(`h-9 w-auto object-contain`)} src="/images/whatsapp-logo.png" alt="WhatsApp" />
