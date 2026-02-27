@@ -85,7 +85,7 @@ const Header = () => {
               <span className={tw(cursorStyle)}></span>
             </h1>
             <p className={tw(`text-lg lg:text-xl text-slate-400 max-w-xl mb-10 leading-relaxed`)}>
-              Atiende a tus clientes 24/7, califica leads automáticamente y agenda test drives sin intervención humana. Deja que tus vendedores se enfoquen en <span className={tw(`text-white font-semibold`)}>calificar leads y cerrar test drives.</span>.
+              Atiende a tus clientes 24/7, califica leads automáticamente y agenda test drives sin intervención humana. Deja que tus vendedores se enfoquen en <span className={tw(`text-white font-semibold`)}>calificar leads y cerrar test drives.</span>
             </p>
             <div className={tw(`flex flex-wrap gap-4`)}>
               <a 
