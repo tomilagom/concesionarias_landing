@@ -11,24 +11,23 @@ const VideoSection = () => (
               IA en Acción
             </h2>
             <p className={tw(`text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6`)}>
-              Mira cómo ConcesionarIA califica a tus leads en tiempo real
+              Observá la IA en acción: calificación y agendado automático
             </p>
-            <p className={tw(`text-slate-400 text-lg mb-8 leading-relaxed`)}>
-              Nuestra IA no solo responde, sino que entabla una conversación humana para entender qué modelo buscan, su presupuesto y urgencia. 
-              <strong> Sin formularios, sin fricción.</strong>
+            <p className={tw(`text-slate-300 text-lg mb-8 leading-relaxed`)}>
+              Conversaciones naturales que detectan intención de compra, consultan stock y agendan pruebas de manejo en segundos. Menos fricción, más test drives.
             </p>
             <ul className={tw(`space-y-4`)}>
               <li className={tw(`flex items-start gap-3 text-slate-300`)}>
                 <span className={tw(`flex-shrink-0 w-6 h-6 rounded-full bg-indigo-500 bg-opacity-20 flex items-center justify-center text-indigo-400 font-bold text-sm`)}>✓</span>
-                <span>Interpretación de lenguaje natural</span>
+                <span>Respuesta en menos de 3 segundos</span>
               </li>
               <li className={tw(`flex items-start gap-3 text-slate-300`)}>
                 <span className={tw(`flex-shrink-0 w-6 h-6 rounded-full bg-indigo-500 bg-opacity-20 flex items-center justify-center text-indigo-400 font-bold text-sm`)}>✓</span>
-                <span>Detección automática de intención de compra</span>
+                <span>Agendado automático de test drives</span>
               </li>
               <li className={tw(`flex items-start gap-3 text-slate-300`)}>
                 <span className={tw(`flex-shrink-0 w-6 h-6 rounded-full bg-indigo-500 bg-opacity-20 flex items-center justify-center text-indigo-400 font-bold text-sm`)}>✓</span>
-                <span>Agenda directa en tu calendario</span>
+                <span>Criterios de calificación personalizables</span>
               </li>
             </ul>
 

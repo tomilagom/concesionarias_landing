@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <Page>
       <NextSeo
-        title="ConcesionarIA - Tu equipo de ventas IA experto en autos"
-        description="Convierte consultas en ventas reales. Nuestra IA califica leads, agenda test drives y reactiva tu base de datos automáticamente. Ideal para gerentes de ventas exigentes."
+        title="ConcesionarIA - IA para concesionarias: califica, agenda y vende"
+        description="Convierte consultas en ventas: respuesta instantánea, calificación inteligente y agendado automático de test drives. Integraciones con WhatsApp, CRM y campañas publicitarias para duplicar leads cualificados."
       />
       <Header />
       <main>

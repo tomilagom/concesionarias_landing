@@ -35,7 +35,7 @@ const Header = () => {
   const [wordIndex, setWordIndex] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
 
-  const words = ['siempre activo', 'consigue test drives', 'califica leads', 'nunca duerme'];
+  const words = ['califica leads', 'agenda test drives', 'duplica conversiones', 'nunca duerme'];
 
   useEffect(() => {
     const handleTyping = () => {
@@ -84,8 +84,8 @@ const Header = () => {
               Tu equipo de ventas <span className={tw(`text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400`)}>{displayText}</span>
               <span className={tw(cursorStyle)}></span>
             </h1>
-            <p className={tw(`text-lg lg:text-xl text-slate-400 max-w-xl mb-10 leading-relaxed`)}>
-              Atiende a tus clientes 24/7, califica leads automáticamente y agenda test drives sin intervención humana. Deja que tus vendedores se enfoquen en <span className={tw(`text-white font-semibold`)}>cerrar las ventas.</span>
+            <p className={tw(`text-lg lg:text-xl text-slate-300 max-w-xl mb-10 leading-relaxed`)}>
+              Responde en segundos, califica intención de compra y agenda pruebas de manejo automáticamente. Menos trabajo manual, más clientes cerrados.
             </p>
             <div className={tw(`flex flex-wrap gap-4`)}>
               <a 

@@ -33,10 +33,10 @@ const ListSection = () => (
     <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8`)}>
       <div className={tw(`mb-20 text-center`)}>
         <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase mb-4`)}>
-          Tus dolores de cabeza diarios
+          Problemas que resolvemos
         </h2>
         <p className={tw(`text-4xl lg:text-5xl font-bold tracking-tight text-slate-900`)}>
-          ¿Por qué tu equipo de ventas no llega al objetivo?
+          Evitá filtraciones en tu embudo de ventas
         </p>
       </div>
       <div className={tw(`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8`)}>

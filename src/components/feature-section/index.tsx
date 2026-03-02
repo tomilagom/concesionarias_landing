@@ -28,12 +28,12 @@ const FeatureSection = () => (
     <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 relative z-10`)}>
       <FadeIn>
         <div className={tw(`mb-20 text-center`)}>
-          <h2 className={tw(`text-base text-indigo-400 font-semibold tracking-wide uppercase mb-4`)}>Potencia tu ConcesionarIA</h2>
+          <h2 className={tw(`text-base text-indigo-400 font-semibold tracking-wide uppercase mb-4`)}>Soluciones para Concesionarias</h2>
           <p className={tw(`text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6`)}>
-            Tecnología diseñada para Gerentes de Ventas exigentes
+            IA que califica, agenda y aumenta la conversión
           </p>
-          <p className={tw(`text-slate-400 text-lg max-w-2xl mx-auto`)}>
-            Deja que la IA se encargue de lo repetitivo mientras tu equipo se enfoca en cerrar ventas.
+          <p className={tw(`text-slate-300 text-lg max-w-2xl mx-auto`)}>
+            Respuesta instantánea, calificación inteligente y seguimiento proactivo para que conviertas más consultas en ventas reales.
           </p>
         </div>
       </FadeIn>

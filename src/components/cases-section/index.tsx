@@ -84,9 +84,19 @@ const CasesSection = () => (
         <h2 className={tw(`text-4xl lg:text-5xl font-extrabold text-white mb-8 tracking-tight`)}>
           ¿Cómo es que tu competencia <br/>ya usa esto?
         </h2>
-        <p className={tw(`text-slate-400 text-lg mb-10 max-w-2xl mx-auto leading-relaxed`)}>
-          Agendar una auditoría de tu stack tecnológico. Te mostramos cuánto dinero pierdes por mes en <span className={tw(`text-white underline decoration-indigo-500 underline-offset-4`)}>trabajo manual</span>.
+        <p className={tw(`text-slate-400 text-lg mb-6 max-w-2xl mx-auto leading-relaxed`)}>
+          Agendá una auditoría y te mostramos cuánto perdés por mes en trabajo manual. Implementación típica: <strong>listo en 4 semanas</strong> con integración a tu CRM.
         </p>
+        <div className={tw(`flex justify-center gap-2 mb-10 flex-wrap max-w-2xl mx-auto`)}>
+          {['Diagnóstico', 'Configuración', 'Integración', 'Optimización'].map((step, index) => (
+            <div key={step} className={tw(`flex items-center`)}>
+              <div className={tw(`bg-indigo-600 text-white px-4 py-2 rounded-full text-sm font-semibold`)}>
+          {step}
+              </div>
+              {index < 3 && <div className={tw(`w-6 h-0.5 bg-slate-600 mx-2`)}></div>}
+            </div>
+          ))}
+        </div>
         <a
           href="https://crm.hyppo.io/widget/bookings/piorichards-concesionarias-ai"
           target="_blank"
