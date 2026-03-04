@@ -14,7 +14,16 @@ const Navigation = () => {
               <span className={tw(`text-white font-bold text-lg md:text-xl tracking-tight`)}>ConcesionarIA</span>
             </div>
           </div>
-          <div className={tw(`flex items-center`)}>
+
+          <div className={tw(`flex items-center gap-4 md:gap-8`)}>
+            <div className={tw(`hidden md:flex items-center gap-8`)}>
+              <a href="#como-funciona" className={tw(`text-slate-300 hover:text-white transition-colors font-medium`)}>
+                Casos reales
+              </a>
+              <a href="#que-hacemos" className={tw(`text-slate-300 hover:text-white transition-colors font-medium`)}>
+                Qué hacemos
+              </a>
+            </div>
             <a 
               href="https://crm.hyppo.io/widget/bookings/piorichards-concesionarias-ai" 
               target="_blank" 

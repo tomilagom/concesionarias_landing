@@ -123,7 +123,7 @@ const Header = () => {
                   <div className={tw(`w-3 h-3 rounded-full bg-yellow-500 bg-opacity-50`)}></div>
                   <div className={tw(`w-3 h-3 rounded-full bg-green-500 bg-opacity-50`)}></div>
                 </div>
-                <div className={tw(`text-[10px] text-slate-500 font-mono uppercase tracking-widest`)}>Agendar Demo</div>
+                <div className={tw(`text-[10px] text-slate-500 font-mono uppercase tracking-widest`)}>Contactanos</div>
               </div>
               {/* Form Embed */}
               <div className={tw(`flex-1`)}>

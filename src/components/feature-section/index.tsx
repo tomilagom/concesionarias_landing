@@ -21,7 +21,7 @@ const solutions = [
 ];
 
 const FeatureSection = () => (
-  <section className={tw(`py-28 bg-slate-900 relative overflow-hidden`)}>
+  <section id="que-hacemos" className={tw(`py-28 bg-slate-900 relative overflow-hidden`)}>
     {/* Background texture */}
     <div className={tw(`absolute inset-0 opacity-10 pointer-events-none`)} style={{ backgroundImage: `radial-gradient(#4f46e5 0.5px, transparent 0.5px)`, backgroundSize: `24px 24px` }}></div>
 
