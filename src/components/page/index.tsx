@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Navigation from '@/components/navigation';
+import WhatsAppWidget from '@/components/whatsapp-widget';
 import { tw } from 'twind';
 
 interface IProps {
@@ -14,6 +15,7 @@ const Page = ({ children }: IProps) => (
     <div className={tw(`min-h-screen flex flex-col`)}>
       <Navigation />
       {children}
+      <WhatsAppWidget />
     </div>
   </div>
 );

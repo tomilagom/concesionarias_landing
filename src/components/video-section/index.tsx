@@ -11,7 +11,7 @@ const VideoSection = () => (
               IA en Acción
             </h2>
             <p className={tw(`text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6`)}>
-              Observá la IA en acción: calificación y agendado automático
+              Experimenta la IA en acción: casos reales
             </p>
             <p className={tw(`text-slate-300 text-lg mb-8 leading-relaxed`)}>
               Conversaciones naturales que detectan intención de compra, consultan stock y agendan pruebas de manejo en segundos. Menos fricción, más test drives.
