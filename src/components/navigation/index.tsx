@@ -8,9 +8,7 @@ const Navigation = () => {
         <div className={tw(`flex items-center justify-between h-16 md:h-20`)}>
           <div className={tw(`flex items-center`)}>
             <a href="#" className={tw(`flex-shrink-0 flex items-center gap-3 hover:opacity-80 transition-opacity`)}>
-              <div className={tw(`w-10 h-10 md:w-16 md:h-16 bg-white rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/20`)}>
-                <img className={tw(`h-8 w-8 md:h-12 md:w-12`)} src="logo.png" alt="logo" width={24} height={24} />
-              </div>
+              <img className={tw(`h-10 w-10 md:h-14 md:w-14`)} src="logo.png" alt="logo" width={40} height={40} />
               <span className={tw(`text-white font-bold text-lg md:text-xl tracking-tight`)}>ConcesionarIA</span>
             </a>
           </div>
