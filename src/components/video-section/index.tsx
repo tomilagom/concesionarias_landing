@@ -7,7 +7,7 @@ const VideoSection = () => (
       <div className={tw(`flex flex-col lg:flex-row items-center gap-12`)}>
         <FadeIn direction="right" className={tw(`lg:w-1/2`)}>
           <div className={tw(`text-left`)}>
-            <h2 className={tw(`text-base text-indigo-400 font-semibold tracking-wide uppercase mb-4`)}>
+            <h2 className={tw(`text-base text-brand-400 font-semibold tracking-wide uppercase mb-4`)}>
               IA en Acción
             </h2>
             <p className={tw(`text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6`)}>
@@ -18,22 +18,22 @@ const VideoSection = () => (
             </p>
             <ul className={tw(`space-y-4`)}>
               <li className={tw(`flex items-start gap-3 text-slate-300`)}>
-                <span className={tw(`flex-shrink-0 w-6 h-6 rounded-full bg-indigo-500 bg-opacity-20 flex items-center justify-center text-indigo-400 font-bold text-sm`)}>✓</span>
+                <span className={tw(`flex-shrink-0 w-6 h-6 rounded-full bg-brand-500 bg-opacity-20 flex items-center justify-center text-brand-400 font-bold text-sm`)}>✓</span>
                 <span>Respuesta en menos de 3 segundos</span>
               </li>
               <li className={tw(`flex items-start gap-3 text-slate-300`)}>
-                <span className={tw(`flex-shrink-0 w-6 h-6 rounded-full bg-indigo-500 bg-opacity-20 flex items-center justify-center text-indigo-400 font-bold text-sm`)}>✓</span>
+                <span className={tw(`flex-shrink-0 w-6 h-6 rounded-full bg-brand-500 bg-opacity-20 flex items-center justify-center text-brand-400 font-bold text-sm`)}>✓</span>
                 <span>Agendado automático de test drives</span>
               </li>
               <li className={tw(`flex items-start gap-3 text-slate-300`)}>
-                <span className={tw(`flex-shrink-0 w-6 h-6 rounded-full bg-indigo-500 bg-opacity-20 flex items-center justify-center text-indigo-400 font-bold text-sm`)}>✓</span>
+                <span className={tw(`flex-shrink-0 w-6 h-6 rounded-full bg-brand-500 bg-opacity-20 flex items-center justify-center text-brand-400 font-bold text-sm`)}>✓</span>
                 <span>Criterios de calificación personalizables</span>
               </li>
             </ul>
 
             <div className={tw(`mt-12`)}>
               <p className={tw(`text-white font-bold mb-6 flex items-center gap-2`)}>
-                <span className={tw(`w-8 h-px bg-indigo-500`)}></span>
+                <span className={tw(`w-8 h-px bg-brand-500`)}></span>
                 Prueba la experiencia real por marca:
               </p>
               <div className={tw(`grid grid-cols-2 sm:grid-cols-3 gap-4`)}>

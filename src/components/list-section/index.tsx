@@ -32,7 +32,7 @@ const ListSection = () => (
   <section className={tw(`lg:py-28 pt-20 pb-20 bg-white`)}>
     <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8`)}>
       <div className={tw(`mb-20 text-center`)}>
-        <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase mb-4`)}>
+        <h2 className={tw(`text-base text-brand-600 font-semibold tracking-wide uppercase mb-4`)}>
           Problemas que resolvemos
         </h2>
         <p className={tw(`text-4xl lg:text-5xl font-bold tracking-tight text-slate-900`)}>
@@ -44,7 +44,7 @@ const ListSection = () => (
           <div className={tw(`relative p-8 rounded-2xl border border-slate-100 bg-slate-50 bg-opacity-50 hover:bg-white hover:shadow-xl transition-all group`)} key={item.title}>
             <div className={tw(`mb-6`)}>
               <span
-                className={tw(`flex w-12 h-12 items-center justify-center text-lg font-bold rounded-xl bg-indigo-600 text-white shadow-lg group-hover:scale-110 transition-transform`)}
+                className={tw(`flex w-12 h-12 items-center justify-center text-lg font-bold rounded-xl bg-brand-600 text-white shadow-lg group-hover:scale-110 transition-transform`)}
               >
                 {index + 1}
               </span>

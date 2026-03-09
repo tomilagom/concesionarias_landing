@@ -5,8 +5,8 @@ import Button from '@/components/button';
 const headerStyle = css`
   background-color: #0f172a;
   background-image: 
-    radial-gradient(at 0% 0%, rgba(79, 70, 229, 0.15) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.1) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, rgba(74, 16, 202, 0.20) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(255, 45, 155, 0.10) 0px, transparent 50%);
   min-height: calc(100vh - 5rem);
   @media (max-width: 768px) {
     min-height: calc(100vh - 4rem);
@@ -23,7 +23,7 @@ const cursorStyle = css`
   display: inline-block;
   width: 3px;
   height: 1em;
-  background-color: #818cf8;
+  background-color: #7C52E0;
   margin-left: 4px;
   vertical-align: middle;
   animation: blink 1s step-end infinite;
@@ -67,21 +67,21 @@ const Header = () => {
     <header className={tw(headerStyle, `relative overflow-hidden`)}>
       {/* Decorative background elements */}
       <div className={tw(`absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none`)}>
-        <div className={tw(`absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-indigo-500 bg-opacity-10 blur-[120px] rounded-full animate-pulse`)}></div>
-        <div className={tw(`absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500 bg-opacity-10 blur-[120px] rounded-full animate-pulse`)} style={{ animationDelay: '2s' }}></div>
+        <div className={tw(`absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-brand-600 bg-opacity-10 blur-[120px] rounded-full animate-pulse`)}></div>
+        <div className={tw(`absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-magenta-500 bg-opacity-10 blur-[120px] rounded-full animate-pulse`)} style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className={tw(`max-w-7xl mx-auto py-12 md:py-20 px-4 sm:px-6 lg:px-8 relative z-10`)}>
         <div className={tw(`grid lg:grid-cols-2 gap-12 items-center`)}>
           <div className={tw(`text-left`)}>
-            <div className={tw(`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500 bg-opacity-10 border border-indigo-500 border-opacity-20 mb-6`)}>
-              <span className={tw(`w-2 h-2 rounded-full bg-indigo-400 animate-pulse`)}></span>
-              <p className={tw(`text-indigo-400 font-mono text-xs font-bold tracking-widest uppercase`)}>
+            <div className={tw(`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-600 bg-opacity-10 border border-brand-600 border-opacity-20 mb-6`)}>
+              <span className={tw(`w-2 h-2 rounded-full bg-brand-400 animate-pulse`)}></span>
+              <p className={tw(`text-brand-400 font-mono text-xs font-bold tracking-widest uppercase`)}>
                 Atención inmediata 24/7 con IA
               </p>
             </div>
             <h1 className={tw(`font-sans font-extrabold text-4xl md:text-6xl lg:text-7xl leading-[1.1] text-white mb-8 tracking-tight`)}>
-              Tu equipo de ventas <span className={tw(`text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-blue-400`)}>{displayText}</span>
+              Tu equipo de ventas <span className={tw(`text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-magenta-500`)}>{displayText}</span>
               <span className={tw(cursorStyle)}></span>
             </h1>
             <p className={tw(`text-lg lg:text-xl text-slate-300 max-w-xl mb-10 leading-relaxed`)}>
@@ -92,7 +92,7 @@ const Header = () => {
                 href="https://crm.hyppo.io/widget/bookings/piorichards-concesionarias-ai" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className={tw(`inline-flex items-center px-8 py-4 text-lg bg-indigo-600 text-white rounded-lg shadow-xl hover:bg-indigo-500 hover:scale-105 transition-all font-semibold`)}
+                className={tw(`inline-flex items-center px-8 py-4 text-lg bg-brand-600 text-white rounded-lg shadow-xl hover:bg-brand-500 hover:scale-105 transition-all font-semibold`)}
               >
                 Agendá una demo
               </a>
@@ -113,7 +113,7 @@ const Header = () => {
         </div>
 
         <div className={tw(`relative lg:ml-4`)}>
-          <div className={tw(`absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-blue-500 rounded-2xl blur opacity-20`)}></div>
+          <div className={tw(`absolute -inset-0.5 bg-gradient-to-r from-brand-600 to-magenta-500 rounded-2xl blur opacity-20`)}></div>
           <div className={tw(`relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 border-opacity-50 bg-slate-900 bg-opacity-50 backdrop-blur-xl`)}>
             <div className={tw(`w-full min-h-[600px] flex flex-col`)}>
               {/* Fake Window Header */}

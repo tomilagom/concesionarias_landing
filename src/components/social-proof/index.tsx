@@ -30,7 +30,7 @@ const SocialProof = () => (
     <div className={tw(`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`)}>
       <FadeIn>
         <div className={tw(`text-center mb-16`)}>
-          <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase mb-4`)}>Qué dicen nuestros clientes</h2>
+          <h2 className={tw(`text-base text-brand-600 font-semibold tracking-wide uppercase mb-4`)}>Qué dicen nuestros clientes</h2>
           <p className={tw(`text-4xl lg:text-5xl font-bold text-gray-900`)}>Gerentes que ya ganaron este juego</p>
         </div>
       </FadeIn>
@@ -44,19 +44,19 @@ const SocialProof = () => (
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className={tw(`w-12 h-12 rounded-full object-cover mr-4 border-2 border-indigo-100 group-hover:border-indigo-500 transition-colors`)}
+                    className={tw(`w-12 h-12 rounded-full object-cover mr-4 border-2 border-brand-400 border-opacity-40 group-hover:border-brand-500 transition-colors`)}
                   />
                 ) : (
-                  <div className={tw(`w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center mr-4 group-hover:bg-indigo-200 transition-colors`)}>
-                    <span className={tw(`text-indigo-600 font-bold`)}>{testimonial.name[0]}</span>
+                  <div className={tw(`w-12 h-12 rounded-full bg-brand-600 bg-opacity-10 flex items-center justify-center mr-4 group-hover:bg-brand-600 group-hover:bg-opacity-20 transition-colors`)}>
+                    <span className={tw(`text-brand-400 font-bold`)}>{testimonial.name[0]}</span>
                   </div>
                 )}
-                <Quote className={tw(`w-6 h-6 text-indigo-400 ml-auto group-hover:text-indigo-600 transition-colors`)} />
+                <Quote className={tw(`w-6 h-6 text-brand-400 ml-auto group-hover:text-brand-600 transition-colors`)} />
               </div>
               <p className={tw(`text-gray-700 leading-relaxed mb-6 text-sm lg:text-base`)}>"{testimonial.text}"</p>
               <div className={tw(`border-t border-gray-200 pt-6`)}>
                 <p className={tw(`font-semibold text-gray-900`)}>{testimonial.name}</p>
-                <p className={tw(`text-sm text-indigo-600 font-medium`)}>{testimonial.role}</p>
+                <p className={tw(`text-sm text-brand-600 font-medium`)}>{testimonial.role}</p>
                 <p className={tw(`text-sm text-gray-500`)}>{testimonial.company}</p>
               </div>
             </div>
@@ -71,7 +71,7 @@ const SocialProof = () => (
             href="https://crm.hyppo.io/widget/bookings/piorichards-concesionarias-ai"
             target="_blank"
             rel="noopener noreferrer"
-            className={tw(`bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition inline-block`)}
+            className={tw(`bg-brand-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition inline-block`)}
           >
             Hablá con nuestro equipo
           </a>

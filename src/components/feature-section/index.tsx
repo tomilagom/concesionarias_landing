@@ -23,12 +23,12 @@ const solutions = [
 const FeatureSection = () => (
   <section id="que-hacemos" className={tw(`py-28 bg-slate-900 relative overflow-hidden`)}>
     {/* Background texture */}
-    <div className={tw(`absolute inset-0 opacity-10 pointer-events-none`)} style={{ backgroundImage: `radial-gradient(#4f46e5 0.5px, transparent 0.5px)`, backgroundSize: `24px 24px` }}></div>
+    <div className={tw(`absolute inset-0 opacity-10 pointer-events-none`)} style={{ backgroundImage: `radial-gradient(#4A10CA 0.5px, transparent 0.5px)`, backgroundSize: `24px 24px` }}></div>
 
     <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 relative z-10`)}>
       <FadeIn>
         <div className={tw(`mb-20 text-center`)}>
-          <h2 className={tw(`text-base text-indigo-400 font-semibold tracking-wide uppercase mb-4`)}>Soluciones para Concesionarias</h2>
+          <h2 className={tw(`text-base text-brand-400 font-semibold tracking-wide uppercase mb-4`)}>Soluciones para Concesionarias</h2>
           <p className={tw(`text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6`)}>
             IA que califica, agenda y aumenta la conversión
           </p>
@@ -42,13 +42,13 @@ const FeatureSection = () => (
         {solutions.map((solution, index) => (
           <FadeIn key={solution.title} delay={index * 200}>
             <div
-              className={tw(`bg-slate-800 bg-opacity-50 backdrop-blur-sm rounded-3xl p-8 border border-slate-700 hover:border-indigo-500 transition-all flex flex-col h-full group`)}
+              className={tw(`bg-slate-800 bg-opacity-50 backdrop-blur-sm rounded-3xl p-8 border border-slate-700 hover:border-brand-500 transition-all flex flex-col h-full group`)}
             >
               <div className={tw(`flex items-center gap-4 mb-8`)}>
-                <span className={tw(`flex w-12 h-12 items-center justify-center text-lg font-bold rounded-2xl bg-indigo-600 text-white flex-shrink-0 shadow-lg`)}>
+                <span className={tw(`flex w-12 h-12 items-center justify-center text-lg font-bold rounded-2xl bg-brand-600 text-white flex-shrink-0 shadow-lg`)}>
                   {index + 1}
                 </span>
-                <h3 className={tw(`text-2xl font-bold text-white group-hover:text-indigo-400 transition-colors`)}>{solution.title}</h3>
+                <h3 className={tw(`text-2xl font-bold text-white group-hover:text-brand-400 transition-colors`)}>{solution.title}</h3>
               </div>
 
               <p className={tw(`text-slate-400 leading-relaxed mb-8 flex-grow`)}>{solution.description}</p>
@@ -56,7 +56,7 @@ const FeatureSection = () => (
               <div className={tw(`space-y-4 mb-8`)}>
                 {solution.benefits.map((benefit) => (
                   <div key={benefit} className={tw(`flex items-center gap-3 bg-slate-900 bg-opacity-50 p-3 rounded-xl border border-slate-700 border-opacity-50`)}>
-                    <Check width={18} height={18} fill="currentColor" className={tw(`text-indigo-400 flex-shrink-0`)} />
+                    <Check width={18} height={18} fill="currentColor" className={tw(`text-brand-400 flex-shrink-0`)} />
                     <span className={tw(`text-slate-300 text-sm font-medium`)}>{benefit}</span>
                   </div>
                 ))}
@@ -66,9 +66,9 @@ const FeatureSection = () => (
                 <div className={tw(`text-center`)}>
                   <p className={tw(`text-xs font-bold uppercase tracking-widest opacity-50`)}>Visual System</p>
                   <div className={tw(`flex gap-1 mt-2 justify-center`)}>
-                    <div className={tw(`w-1 h-4 bg-indigo-500 rounded-full animate-bounce`)}></div>
-                    <div className={tw(`w-1 h-6 bg-indigo-500 rounded-full animate-bounce`)} style={{ animationDelay: `0.2s` }}></div>
-                    <div className={tw(`w-1 h-3 bg-indigo-500 rounded-full animate-bounce`)} style={{ animationDelay: `0.4s` }}></div>
+                    <div className={tw(`w-1 h-4 bg-brand-500 rounded-full animate-bounce`)}></div>
+                    <div className={tw(`w-1 h-6 bg-brand-500 rounded-full animate-bounce`)} style={{ animationDelay: `0.2s` }}></div>
+                    <div className={tw(`w-1 h-3 bg-brand-500 rounded-full animate-bounce`)} style={{ animationDelay: `0.4s` }}></div>
                   </div>
                 </div>
               </div>

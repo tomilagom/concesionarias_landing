@@ -26,7 +26,7 @@ const Navigation = () => {
               href="https://crm.hyppo.io/widget/bookings/piorichards-concesionarias-ai" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className={tw(`hidden md:inline-flex items-center px-6 py-2 bg-indigo-600 text-white rounded-lg shadow-lg hover:bg-indigo-500 transition-all font-semibold`)}
+              className={tw(`hidden md:inline-flex items-center px-6 py-2 bg-brand-600 text-white rounded-lg shadow-lg hover:bg-brand-500 transition-all font-semibold`)}
             >
               Agendá una demo
             </a>

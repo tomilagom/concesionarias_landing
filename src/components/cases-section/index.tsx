@@ -45,7 +45,7 @@ const CasesSection = () => (
     <div className={tw(`w-full bg-slate-50 py-28`)}>
       <div className={tw(`max-w-7xl mx-4 lg:mx-auto`)}>
         <div className={tw(`text-center mb-20`)}>
-          <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase mb-4`)}>
+          <h2 className={tw(`text-base text-brand-600 font-semibold tracking-wide uppercase mb-4`)}>
             Resultados Reales
           </h2>
           <p className={tw(`text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight`)}>
@@ -62,7 +62,7 @@ const CasesSection = () => (
                 )}
               >
                 <div className={tw(`mb-6`)}>
-                  <p className={tw(`text-indigo-600 text-5xl font-extrabold mb-1 tracking-tighter group-hover:scale-105 transition-transform origin-left`)}>{benefit.metric}</p>
+                  <p className={tw(`text-brand-600 text-5xl font-extrabold mb-1 tracking-tighter group-hover:scale-105 transition-transform origin-left`)}>{benefit.metric}</p>
                   {benefit.submetric && <p className={tw(`text-slate-500 text-xs font-bold uppercase tracking-widest`)}>{benefit.submetric}</p>}
                 </div>
 
@@ -70,7 +70,7 @@ const CasesSection = () => (
                 <p className={tw(`text-slate-600 leading-relaxed text-sm`)}>{benefit.description}</p>
 
                 <div className={tw(`mt-8 h-2 bg-slate-100 rounded-full overflow-hidden`)}>
-                  <div className={tw(`h-full bg-indigo-600 rounded-full animate-pulse`)} style={{ width: `70%` }}></div>
+                  <div className={tw(`h-full bg-brand-600 rounded-full animate-pulse`)} style={{ width: `70%` }}></div>
                 </div>
               </div>
             ))}
@@ -79,7 +79,7 @@ const CasesSection = () => (
     </div>
 
     <div className={tw(`w-full bg-slate-900 py-24 relative overflow-hidden`)}>
-      <div className={tw(`absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 via-blue-500 to-indigo-500`)}></div>
+      <div className={tw(`absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-500 via-blue-500 to-brand-500`)}></div>
       <div className={tw(`max-w-4xl mx-4 lg:mx-auto text-center relative z-10`)}>
         <h2 className={tw(`text-4xl lg:text-5xl font-extrabold text-white mb-8 tracking-tight`)}>
           ¿Cómo es que tu competencia <br/>ya usa esto?
@@ -90,7 +90,7 @@ const CasesSection = () => (
         <div className={tw(`flex justify-center gap-2 mb-10 flex-wrap max-w-2xl mx-auto`)}>
           {['Diagnóstico', 'Configuración', 'Integración', 'Optimización'].map((step, index) => (
             <div key={step} className={tw(`flex items-center`)}>
-              <div className={tw(`bg-indigo-600 text-white px-4 py-2 rounded-full text-sm font-semibold`)}>
+              <div className={tw(`bg-brand-600 text-white px-4 py-2 rounded-full text-sm font-semibold`)}>
           {step}
               </div>
               {index < 3 && <div className={tw(`w-6 h-0.5 bg-slate-600 mx-2`)}></div>}
@@ -102,7 +102,7 @@ const CasesSection = () => (
           target="_blank"
           rel="noopener noreferrer"
           className={tw(
-            `bg-indigo-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-indigo-500 hover:shadow-2xl transition-all active:scale-95 inline-flex items-center gap-3`,
+            `bg-brand-600 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-brand-500 hover:shadow-2xl transition-all active:scale-95 inline-flex items-center gap-3`,
           )}
         >
           Reservá tu consultoría
